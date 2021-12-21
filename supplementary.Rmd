@@ -1,0 +1,12 @@
+---
+title: " "
+pagetitle: "Joaquín Martínez Minaya"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
+
+## Supplementary material
+[dirinla](htmls/report_dirinla_iid.html)
+
+

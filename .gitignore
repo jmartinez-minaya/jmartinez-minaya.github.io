@@ -1,0 +1,9 @@
+*.xcf
+*.rds
+*.RDS
+*.bib.bak
+*.bib.sav
+*.Rhistory
+*.Rproj.user
+
+

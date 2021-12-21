@@ -1,0 +1,18 @@
+name: "Joaquín Martínez-Minaya"
+navbar:
+  title: "Joaquín Martínez-Minaya"
+  left:
+    - text: "Research"
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+    - text: "Supplementary material"
+      href: supplementary.html
+  right: 
+    - icon: fa-envelope fa-lg
+      href: mailto:<jmarmin@eio.upv.es>
+    - icon: fa-github fa-lg
+      href: http://github.com/ximo1990/
+output:
+  html_document:
+    theme: darkly
