@@ -7,6 +7,10 @@ pagetitle: "Joaquín Martínez Minaya"
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
 ## Supplementary material
-[dirinla](htmls/report_dirinla_iid.html)
+- **dirinla project**. [The integrated Nested Laplace Approximation for fitting Dirichlet regressions](https://arxiv.org/abs/1907.04059)
+
+    1. [Fitting Dirichlet regression with fixed effects](supplementary/CODA/fixed/my-vignette_fixed.html)
+    2. [Fitting Dirichlet regression with random effects](supplementary/CODA/fixed/my-vignette_fixed.html)
+    2. [Simulation results using i.i.d. random effects](htmls/report_dirinla_iid.html)
 
 
