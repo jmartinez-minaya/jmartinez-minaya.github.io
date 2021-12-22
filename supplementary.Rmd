@@ -11,6 +11,6 @@ pagetitle: "Joaquín Martínez Minaya"
 
     1. [Fitting Dirichlet regression with fixed effects](supplementary/CODA/fixed/my-vignette_fixed.html)
     2. [Fitting Dirichlet regression with random effects](supplementary/CODA/fixed/my-vignette_fixed.html)
-    2. [Simulation results using i.i.d. random effects](htmls/report_dirinla_iid.html)
+    2. [Simulation results using fixed and i.i.d. random effects](htmls/report_dirinla_iid.html)
 
 

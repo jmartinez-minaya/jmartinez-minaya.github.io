@@ -29,6 +29,13 @@ knitr::opts_chunk$set(
 This vignette is devoted to explain how to use the package **dirinla**. It is a R-package to fit Dirichlet regression models using **R-INLA**. It can be installed and upgraded via the repository https://bitbucket.org/joaquin-martinez-minaya/dirinla. In this manual, we simulate some data from a Dirichlet distribution to posteriorly fit them using the main function of the package **dirinla**.
 
 ```{r, echo= TRUE, results= 'hide', warning= FALSE, message= FALSE, eval = TRUE}
+knitr::opts_chunk$set(
+  comment = "#>", 
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  cache   = FALSE
+)
 library(dirinla)
 library(INLA)
 library(DirichletReg)
@@ -223,14 +230,14 @@ gridExtra::grid.arrange(p1[[1]], p1[[2]], p1[[3]],
 
 # Predictions
 
-The package provides a method predict to compute posterior predictive distributions for new individuals. To show how this function works, we will predict for a value of v1 = 0.2, v2 = 0.5, and v3 = -0.1:
-```{r, echo= TRUE, warning= FALSE, message= FALSE, eval = TRUE}
+The package provides a method predict to compute posterior predictive distributions for new individuals. To show how this function works, we will predict for a value of v1 = 0.2, v2 = 0.5, and v3 = 0.1:
+```{r, echo= TRUE, warning= FALSE, message= FALSE, eval = TRUE, result}
 ### --- 5. Predicting for v1 = 0.25, v2 = 0.5, v3 = 0.5, v4 = 0.1 --- ####
 model.prediction <-
   predict(model.inla,
                   data.pred.cov = data.frame(v1 = 0.2 ,
                                          v2 = 0.5,
-                                         v3 = -0.1))
+                                         v3 = 0.1))
 model.prediction$summary_predictive_means
 
 ### --- 6. We can also predict directly --- ####
@@ -243,7 +250,7 @@ model.inla <- dirinlareg(
   prediction = TRUE,
   data.pred.cov = data.frame(v1 = 0.2 ,
                              v2 = 0.5,
-                             v3 = -0.1))
+                             v3 = 0.1))
 
 
 model.prediction$summary_predictive_means
