@@ -296,10 +296,10 @@ as.data.frame(result_ratio2_jags)
 To conduct the tests, we have simulated different datasets with the following structures.
 Each dataset has 4 covariates, one per category and a shared random effect.
 \begin{eqnarray}
-  \log(\alpha_{1n}) & = & \eta_{1n} = \beta_{1}^1 \cdot v_{1n} + w^1(j_n) \,, \nonumber \\
-  \log(\alpha_{2n}) & = & \eta_{2n} = \beta_{1}^2 \cdot v_{2n} + w^1(j_n) \,, \nonumber \\
-  \log(\alpha_{3n}) & = & \eta_{3n} = \beta_{1}^3 \cdot v_{3n} + w^2(j_n) \,, \nonumber \\
-  \log(\alpha_{4n}) & = & \eta_{4n} = \beta_{1}^4 \cdot v_{4n} + w^2(j_n) \,, \nonumber \\
+  \log(\alpha_{1n}) & = & \eta_{1n} = \beta_{11} \cdot v_{1n} + w^1(j_n) \,, \nonumber \\
+  \log(\alpha_{2n}) & = & \eta_{2n} = \beta_{12} \cdot v_{2n} + w^1(j_n) \,, \nonumber \\
+  \log(\alpha_{3n}) & = & \eta_{3n} = \beta_{13} \cdot v_{3n} + w^2(j_n) \,, \nonumber \\
+  \log(\alpha_{4n}) & = & \eta_{4n} = \beta_{14} \cdot v_{4n} + w^2(j_n) \,, \nonumber \\
 \end{eqnarray}
 where $v_{kn}$ are covariates $k = 1, \ldots, 4$ simulated from a random uniform (-1, 1), and $w^1(j_n)$ and $w^2(j_n)$ are **iid shared random effects**. $j_n = 1, \ldots, J$, being $J$ the levels of the factor.
 
