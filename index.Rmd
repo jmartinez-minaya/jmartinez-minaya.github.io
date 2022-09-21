@@ -10,7 +10,7 @@ pagetitle: "Joaquín Martínez-Minaya"
 
 Welcome to this place! ;)
 
-I am Joaquín Martínez-Minaya, lecturer at the Departament of Applied Statistics and Operations Research and Queality at The Polytechnic University of Valencia (https://www.upv.es/entidades/DEIO/index-en.html).
+I am Joaquín Martínez-Minaya, lecturer at the Departament of Applied Statistics and Operations Research and Quality at The Polytechnic University of Valencia (https://www.upv.es/entidades/DEIO/index-en.html).
 
 My research interest lies in statistical modeling for complex data. In particular, **I develop Bayesian Spatio-Temporal models in different contexts**: Plant disease epidemiology, Global climate change, marine species distribution and disease epidemiology.
 

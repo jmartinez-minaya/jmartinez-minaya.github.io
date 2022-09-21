@@ -1,0 +1,825 @@
+---
+title: "Supplementary material for the paper Martinez-Minaya et al. (2021)"
+author: "Joaquín Martínez-Minaya, Finn Lindgren, Antonio López-Quílez, Daniel Simpson and David Conesa"
+date: "`r Sys.Date()`"
+linestretch: "1.5"
+
+output:   
+  bookdown::html_document2:
+  #theme: cerulean
+    df_print: paged
+    code_folding: hide
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: false
+header-includes:
+   - \newcommand{\vekey}[1]{{\boldsymbol{#1}}} %vectors
+   - \newcommand{\ve}[1]{{\boldsymbol{#1}}} %vectors
+
+
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>", 
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  cache   = FALSE
+)
+library(dirinla)
+library(INLA)
+library(dplyr)
+library(DirichletReg) #Dirichlet
+library(knitr)
+
+
+```
+
+# Introduction
+This document shows the supplementary material of the article entitled "The Integrated nested Laplace approximation for fitting Dirichlet regression models''. In particular, we show all the results obtained in the simulation scenarios (1,2 and 3) presented in the paper.
+
+
+# Simulation 1 {.tabset}
+Thi simulation is based on a Dirichlet regression with four categories and one parameter per category, the intercept, that is:
+\begin{align} \label{eq:dirichlet_example1}
+  \ve{Y}_{\bullet n} & \sim  \text{Dirichlet}(\alpha_{1n}, \ldots, \alpha_{4n}) \,, n = 1, \ldots, N, \nonumber \\
+  \log(\alpha_{1n}) & =  \beta_{01}, \nonumber \\
+  \log(\alpha_{2n}) & =  \beta_{02}, \nonumber \\
+  \log(\alpha_{3n}) & =  \beta_{03},  \\
+  \log(\alpha_{4n}) & =  \beta_{04}. \nonumber
+\end{align}
+{Five different datasets of sizes $N= 50, 100$, $500, 1000, 10000$ }with this structure were simulated letting $\beta_{0c}, c = 1,\ldots,4$ to be $-2.4$, $1.2$, $-3.1$ and $1.3$, respectively. We used vague prior distributions for the {latent field (\{$\beta_{0c}, c = 1,\ldots,4$\})}. In particular $p(x_m) \sim$ $\mathcal{N}(0, \tau = 0.0001)$. As the response values are not close to 0 and 1, no transformation was needed.
+
+## Computational times
+```{r, results='asis'}
+results1 <- readRDS(file = "simulation1/simulation1_50-500.RDS")
+results2 <- readRDS(file = "simulation1/simulation1_1000-10000.RDS")
+results <- c(results1, results2)
+
+res_ratios <- readRDS("simulation1/simulation1_ratios_jags.RDS")
+
+
+#Computational times
+result_time <- rbind(results$n50$times,
+                     results$n100$times,
+                     results$n500$times,
+                     results$n1000$times,
+                     results$n10000$times)
+colnames(result_time) <- c("R-JAGS", "dirinla", "long R-JAGS")
+rownames(result_time) <- paste0( c(50, 100, 500, 1000, 10000))
+as.data.frame(result_time)
+```
+
+## Plotting marginal posterior distributions {.tabset}
+
+```{r, results = 'asis'}
+N <- c(50, 100, 500, 1000, 10000)
+for(i in N){
+    cat("\n")
+  cat(sprintf(paste0("### N = ", i, "\n")))
+  cat(paste0("![](simulation1/examples_simulation1_beta0_mus_", i, ".png){width=100%}"))
+  cat("\n")
+  
+}
+```
+
+
+## Ratios {.tabset}
+
+```{r, results = 'asis'}
+### ratios dirinla
+result_ratio1 <- cbind(rbind(round(results$n50$ratio1_intercept, 4),
+                             round(results$n100$ratio1_intercept, 4),
+                             round(results$n500$ratio1_intercept, 4),
+                             round(results$n1000$ratio1_intercept, 4),
+                             round(results$n10000$ratio1_intercept, 4)),
+                       rbind(round(results$n50$ratio1_mu, 4),
+                             round(results$n100$ratio1_mu, 4),
+                             round(results$n500$ratio1_mu, 4),
+                             round(results$n1000$ratio1_mu, 4),
+                             round(results$n10000$ratio1_mu, 4)))
+colnames(result_ratio1) <- c(paste0("beta0", 1:4), paste0("mu", 1:4))
+rownames(result_ratio1) <- paste0( c(50, 100, 500, 1000, 10000))
+
+result_ratio2 <- cbind(rbind(round(sqrt(results$n50$ratio2_intercept), 4),
+                             round(sqrt(results$n100$ratio2_intercept), 4),
+                             round(sqrt(results$n500$ratio2_intercept), 4),
+                             round(sqrt(results$n1000$ratio2_intercept), 4),
+                             round(sqrt(results$n10000$ratio2_intercept), 4)),
+                       rbind(round(sqrt(results$n50$ratio2_mu), 4),
+                             round(sqrt(results$n100$ratio2_mu), 4),
+                             round(sqrt(results$n500$ratio2_mu), 4),
+                             round(sqrt(results$n1000$ratio2_mu), 4),
+                             round(sqrt(results$n10000$ratio2_mu), 4)))
+colnames(result_ratio2) <- c(paste0("beta0", 1:4), paste0("mu", 1:4))
+rownames(result_ratio2) <- paste0( c(50, 100, 500, 1000, 10000))
+
+### ratios short jags
+result_ratio1_jags <- cbind(rbind(round(res_ratios$n50$ratio1_beta0_jags, 4),
+                                  round(res_ratios$n100$ratio1_beta0_jags, 4),
+                                  round(res_ratios$n500$ratio1_beta0_jags, 4),
+                                  round(res_ratios$n1000$ratio1_beta0_jags, 4),
+                                  round(res_ratios$n10000$ratio1_beta0_jags, 4)),
+                            rbind(round(res_ratios$n50$ratio1_mu_jags, 4),
+                                  round(res_ratios$n100$ratio1_mu_jags, 4),
+                                  round(res_ratios$n500$ratio1_mu_jags, 4),
+                                  round(res_ratios$n1000$ratio1_mu_jags, 4),
+                                  round(res_ratios$n10000$ratio1_mu_jags, 4)))
+colnames(result_ratio1_jags) <- c(paste0("beta0", 1:4), paste0("mu", 1:4))
+rownames(result_ratio1_jags) <- paste0( c(50, 100, 500, 1000, 10000))
+
+result_ratio2_jags <- cbind(rbind(round(sqrt(res_ratios$n50$ratio2_beta0_jags), 4),
+                                  round(sqrt(res_ratios$n100$ratio2_beta0_jags), 4),
+                                  round(sqrt(res_ratios$n500$ratio2_beta0_jags), 4),
+                                  round(sqrt(res_ratios$n1000$ratio2_beta0_jags), 4),
+                                  round(sqrt(res_ratios$n10000$ratio2_beta0_jags), 4)),
+                            rbind(round(sqrt(res_ratios$n50$ratio2_mu_jags), 4),
+                                  round(sqrt(res_ratios$n100$ratio2_mu_jags), 4),
+                                  round(sqrt(res_ratios$n500$ratio2_mu_jags), 4),
+                                  round(sqrt(res_ratios$n1000$ratio2_mu_jags), 4),
+                                  round(sqrt(res_ratios$n10000$ratio2_mu_jags), 4)))
+colnames(result_ratio2_jags) <- c(paste0("beta0", 1:4), paste0("mu", 1:4))
+rownames(result_ratio2_jags) <- paste0( c(50, 100, 500, 1000, 10000))
+
+cat(sprintf(paste0("### ratio1-dirinla", "\n")))
+as.data.frame(result_ratio1)
+
+
+cat(sprintf(paste0("### ratio1-RJAGS", "\n")))
+as.data.frame(result_ratio1_jags)
+
+cat(sprintf(paste0("### ratio2-dirinla", "\n")))
+as.data.frame(result_ratio2)
+
+cat(sprintf(paste0("### ratio2-RJAGS", "\n")))
+as.data.frame(result_ratio2_jags)
+
+
+```
+
+
+
+
+
+# Simulation 2 {.tabset}
+The second setting is based on a Dirichlet regression with a different covariate per category:
+\begin{align}
+  \ve{Y}_{\bullet n} & \sim  \text{Dirichlet}(\alpha_{1n}, \ldots, \alpha_{4n}) \,, n = 1, \ldots, N, \nonumber \\
+  \log(\alpha_{1n}) & =  \beta_{01} + \beta_{11} v_{1n}, \nonumber \\
+  \log(\alpha_{2n}) & =  \beta_{02} + \beta_{12} v_{2n}, \nonumber \\
+  \log(\alpha_{3n}) & =  \beta_{03} + \beta_{13} v_{3n},  \\
+  \log(\alpha_{4n}) & =  \beta_{04} + \beta_{14} v_{4n}. \nonumber
+\end{align}
+{Again, we simulated five different datasets of sizes $N= 50, 100$, $500, 1000, 10000$. We set values for $\beta_{0c}$ and $\beta_{1c}$ for $c = 1, \ldots, 4$ to $-1.5, 1, -3, 1.5, 2, -3 , -1, 5$ respectively, and we simulated covariates from a Uniform distribution with mean in the interval $(0,1)$. We assigned vague prior distributions for the {latent field (\{$\beta_{0c}, \beta_{1c}, c = 1,\ldots,4$\})} $p(x_n) \sim$ $\mathcal{N}(0, \tau = 0.0001)$. As the data generated did not present zeros and ones, we did not use any transformation.}
+
+
+## Computational times
+```{r, results='asis'}
+results1 <- readRDS(file = "simulation2/simulation2_50-500.RDS")
+results2 <- readRDS(file = "simulation2/simulation2_1000-10000.RDS")
+results <- c(results1, results2)
+
+res_ratios <- readRDS("simulation2/simulation2_ratios_jags.RDS")
+
+
+#Computational times
+result_time <- rbind(results$n50$times,
+                     results$n100$times,
+                     results$n500$times,
+                     results$n1000$times,
+                     results$n10000$times)
+colnames(result_time) <- c("R-JAGS", "dirinla", "long R-JAGS")
+rownames(result_time) <- paste0( c(50, 100, 500, 1000, 10000))
+as.data.frame(result_time)
+```
+
+## Plotting marginal posterior distributions {.tabset}
+
+```{r, results = 'asis'}
+N <- c(50, 100, 500, 1000, 10000)
+for(i in N){
+    cat("\n")
+  cat(sprintf(paste0("### N = ", i, "\n")))
+  cat(paste0("![](simulation2/examples_simulation2_slopes_intercepts_", i, ".png){width=100%}"))
+  cat("\n")
+}
+```
+
+
+## Ratios {.tabset}
+```{r, results='asis'}
+  results1 <- readRDS(file = "simulation2/simulation2_50-500.RDS")
+results2 <- readRDS(file = "simulation2/simulation2_1000-10000.RDS")
+results <- c(results1, results2)
+
+res_ratios <- readRDS("simulation2/simulation2_ratios_jags.RDS")
+
+### ratios dirinla
+result_ratio1 <- cbind(rbind(round(results$n50$ratio1_intercepts, 4),
+                             round(results$n100$ratio1_intercepts, 4),
+                             round(results$n500$ratio1_intercepts, 4),
+                             round(results$n1000$ratio1_intercepts, 4),
+                             round(results$n10000$ratio1_intercepts, 4)),
+                       rbind(round(results$n50$ratio1_slopes, 4),
+                             round(results$n100$ratio1_slopes, 4),
+                             round(results$n500$ratio1_slopes, 4),
+                             round(results$n1000$ratio1_slopes, 4),
+                             round(results$n10000$ratio1_slopes, 4)))
+colnames(result_ratio1) <- c(paste0("beta0", 1:4), paste0("beta1", 1:4))
+rownames(result_ratio1) <- paste0( c(50, 100, 500, 1000, 10000))
+
+result_ratio2 <- cbind(rbind(round(sqrt(results$n50$ratio2_intercepts), 4),
+                             round(sqrt(results$n100$ratio2_intercepts), 4),
+                             round(sqrt(results$n500$ratio2_intercepts), 4),
+                             round(sqrt(results$n1000$ratio2_intercepts), 4),
+                             round(sqrt(results$n10000$ratio2_intercepts), 4)),
+                       rbind(round(sqrt(results$n50$ratio2_slopes), 4),
+                             round(sqrt(results$n100$ratio2_slopes), 4),
+                             round(sqrt(results$n500$ratio2_slopes), 4),
+                             round(sqrt(results$n1000$ratio2_slopes), 4),
+                             round(sqrt(results$n10000$ratio2_slopes), 4)))
+colnames(result_ratio2) <- c(paste0("beta0", 1:4), paste0("beta1", 1:4))
+rownames(result_ratio2) <- paste0( c(50, 100, 500, 1000, 10000))
+
+### ratios short jags
+result_ratio1_jags <- cbind(rbind(round(res_ratios$n50$ratio1_beta0_jags, 4),
+                             round(res_ratios$n100$ratio1_beta0_jags, 4),
+                             round(res_ratios$n500$ratio1_beta0_jags, 4),
+                             round(res_ratios$n1000$ratio1_beta0_jags, 4),
+                             round(res_ratios$n10000$ratio1_beta0_jags, 4)),
+                       rbind(round(res_ratios$n50$ratio1_beta1_jags, 4),
+                             round(res_ratios$n100$ratio1_beta1_jags, 4),
+                             round(res_ratios$n500$ratio1_beta1_jags, 4),
+                             round(res_ratios$n1000$ratio1_beta1_jags, 4),
+                             round(res_ratios$n10000$ratio1_beta1_jags, 4)))
+colnames(result_ratio1_jags) <- c(paste0("beta0", 1:4), paste0("beta1", 1:4))
+rownames(result_ratio1_jags) <- paste0( c(50, 100, 500, 1000, 10000))
+
+result_ratio2_jags <- cbind(rbind(round(sqrt(res_ratios$n50$ratio2_beta0_jags), 4),
+                             round(sqrt(res_ratios$n100$ratio2_beta0_jags), 4),
+                             round(sqrt(res_ratios$n500$ratio2_beta0_jags), 4),
+                             round(sqrt(res_ratios$n1000$ratio2_beta0_jags), 4),
+                             round(sqrt(res_ratios$n10000$ratio2_beta0_jags), 4)),
+                       rbind(round(sqrt(res_ratios$n50$ratio2_beta1_jags), 4),
+                             round(sqrt(res_ratios$n100$ratio2_beta1_jags), 4),
+                             round(sqrt(res_ratios$n500$ratio2_beta1_jags), 4),
+                             round(sqrt(res_ratios$n1000$ratio2_beta1_jags), 4),
+                             round(sqrt(res_ratios$n10000$ratio2_beta1_jags), 4)))
+colnames(result_ratio2_jags) <- c(paste0("beta0", 1:4), paste0("beta1", 1:4))
+rownames(result_ratio2_jags) <- paste0( c(50, 100, 500, 1000, 10000))
+
+
+
+
+
+
+
+cat(sprintf(paste0("### ratio1-dirinla", "\n")))
+as.data.frame(result_ratio1)
+
+
+cat(sprintf(paste0("### ratio1-RJAGS", "\n")))
+as.data.frame(result_ratio1_jags)
+
+cat(sprintf(paste0("### ratio2-dirinla", "\n")))
+as.data.frame(result_ratio2)
+
+cat(sprintf(paste0("### ratio2-RJAGS", "\n")))
+as.data.frame(result_ratio2_jags)
+  
+```
+
+
+# Simulation 3 {.tabset}
+The third setting is based on a Dirichlet regression with a different covariate per category without intercept and adding two shared independent random effects.
+\begin{align}
+  \vekey{Y}_{\bullet n} & \sim  \text{Dirichlet}(\alpha_{1n}, \ldots, \alpha_{4n}) \,, n = 1, \ldots, N, \nonumber \\
+  \log(\alpha_{1n}) & =   \beta_{11} v_{1n} + \omega_{1i_n}, \nonumber \\
+  \log(\alpha_{2n}) & =   \beta_{12} v_{2n} + \omega_{1i_n}, \nonumber \\
+  \log(\alpha_{3n}) & =   \beta_{13} v_{3n} + \omega_{2i_n},  \\
+  \log(\alpha_{4n}) & =   \beta_{14} v_{4n} + \omega_{2i_n}. \nonumber
+\end{align}
+We simulated four different datasets of sizes $N= 50, 100$, $500, 1000$. We set values for $\beta_{1c}$ for $c = 1, \ldots, 4$ to $-1.5, 2, 1, -3 $ respectively, and we simulated covariates from a Uniform distribution on the interval $(-1,1)$. Random effects $\ve{\omega}_1$ and $\ve{\omega}_2$ were simulated from Gaussian distributions with mean 0 and {\azul standard deviations $\sigma_1 = 1/2$ (precision $\tau_1 = 4$) and $\sigma_2 = 1/3$ (precision $\tau_2 = 9$)} varying the levels of the factor ($I$), in particular, {\azul they were set to $I = 2, 5, 10, 25$}. The $i_n$ sub-index assigns each individual $n$ to a level of the factor.
+
+As we are in the context of Bayesian LGMs, we established Gaussian prior distributions for the latent field, in this case, formed by the parameters corresponding to the fixed effects and the random effects. In particular, we assigned Gaussian prior distributions with mean 0 and precision $0.0001$ to \{$\beta_{1c}, c = 1,\ldots,4$\}, and Gaussian priors distribution with mean $0$ and precisions $\tau_1$ and $\tau_2$ for the two shared random effects $\ve{\omega}_{1}$ and $\ve{\omega}_{2}$.
+
+Two types of priors for the $\tau_1$ and $\tau_2$ parameters were employed. 
+
+- Half-Gaussian priors with location $0$ and precision parameter $1$ were used for **R-JAGS**, **long R-JAGS** and **dirinla**. 
+
+- For **dirinla**, and additional model with a PC-prior(1, 0.01) was also used. The generated data did not contain zeros and ones, so we did not use any transformation. As these models have two hyperparameters, we increased the number of iterations of the **R-JAGS** method to $20000$ and burnin to $2000$ to achieve a given effective sample size of the MCMC method.
+
+
+## Computational times {.tabset}
+When J = 50, 100, 500 and 1000, only the corresponding model J=N is fitted. 
+
+```{r, results='asis'}
+a <- readRDS(file = "simulation4/simulation4_50-500.RDS")
+b <- readRDS(file = "simulation4/simulation4_1000.RDS")
+results <- cbind(a,b)
+res_ratios <- readRDS("simulation4/simulation4_ratios_jags.RDS")
+
+res_times <- function(j){
+  N <- c(50, 100, 500, 1000)
+if(j> 40){
+    n_levels_paper <- paste0(N[N==j], "-", N[N==j])
+  }else{
+    n_levels_paper <- paste0(N, "-", j)
+
+  }
+  #Computational times levels_factor = 2
+times <- n_levels_paper %>% results["times",.] %>%
+  do.call(rbind, .)
+colnames(times) <- c("R-JAGS", "dirinla-pc", "long R-JAGS", "dirinla-hn")
+
+cat(sprintf(paste0("### J = ", j, "{.tabset} \n")))
+as.data.frame(times)
+}
+
+
+
+#c(2,5,10, 25, 50, 100, 500, 1000)
+i <- 2
+res_times(j = i)
+  
+i <- 5
+res_times(j = i)
+
+
+i <- 10
+res_times(j = i)
+
+i <- 25
+res_times(j = i)
+
+i <- 50
+res_times(j = i)
+
+i <- 100
+res_times(j = i)
+
+i <- 500
+res_times(j = i)
+
+i <- 1000
+res_times(j = i)
+
+
+
+
+``` 
+
+## Plotting marginal posterior distributions {.tabset}
+
+```{r, results='asis'}
+summary_print <- function(N, J)
+{
+  cat("\n")
+  cat(sprintf(paste0("#### J = ", J, "\n")))
+  cat("**Parameters** \n")
+  cat(paste0("![](simulation4/examples_simulation4_slopes_", N, "_", J, "/examples_simulation4_slopes_", N, "_", J, "-1.png){width=100%}"))
+
+  cat("**Hyperparameters** \n ")
+  cat(paste0("![](simulation4/examples_simulation4_sigma_", N, "_", J, "/examples_simulation4_sigma_", N, "_", J, "-1.png){width=100%} \n \n "))
+  cat("<br>")
+}
+```
+
+### N = 50 {.tabset}
+
+```{r, results = 'asis'}
+summary_print(N = 50, J = 2)
+summary_print(N = 50, J = 5)
+summary_print(N = 50, J = 10)
+summary_print(N = 50, J = 25)
+summary_print(N = 50, J = 50)
+```
+
+### N = 100 {.tabset}
+
+```{r, results = 'asis'}
+summary_print(N = 100, J = 2)
+summary_print(N = 100, J = 5)
+summary_print(N = 100, J = 10)
+summary_print(N = 100, J = 25)
+summary_print(N = 100, J = 100)
+```
+
+
+### N = 500 {.tabset}
+
+```{r, results = 'asis'}
+summary_print(N = 500, J = 2)
+summary_print(N = 500, J = 5)
+summary_print(N = 500, J = 10)
+summary_print(N = 500, J = 25)
+summary_print(N = 500, J = 500)
+```
+
+### N = 1000 {.tabset}
+
+```{r, results = 'asis'}
+summary_print(N = 1000, J = 2)
+summary_print(N = 1000, J = 5)
+summary_print(N = 1000, J = 10)
+summary_print(N = 1000, J = 25)
+summary_print(N = 1000, J = 1000)
+```
+
+
+## Ratios {.tabset}
+
+When J = 50, 100, 500 and 1000, only the corresponding model J=N is fitted. 
+```{r, results='asis'}
+a <- readRDS(file = "simulation4/simulation4_50-500.RDS")
+b <- readRDS(file = "simulation4/simulation4_1000.RDS")
+results <- cbind(a,b)
+res_ratios <- readRDS("simulation4/simulation4_ratios_jags.RDS")
+
+res_ratio1 <- function(j){
+  N <- c(50, 100, 500, 1000)
+if(j> 40){
+    n_levels_paper <- paste0(N[N==j], "-", N[N==j])
+  }else{
+    n_levels_paper <- paste0(N, "-", j)
+
+  }
+  #Computational times levels_factor = 2
+times <- n_levels_paper %>% results["times",.] %>%
+  do.call(rbind, .)
+
+# DIRINLA:ratio1_beta1 and sigma
+ratio1_beta1_hn <- n_levels_paper %>% results["ratio1_beta1_hn",.] %>%
+  do.call(rbind, .)
+ratio1_sigma1_hn <- n_levels_paper %>% results["ratio1_sigma_hn",.] %>%
+  do.call(rbind, .)
+ratio1_paper <- cbind(ratio1_beta1_hn, ratio1_sigma1_hn) %>% round(., 4)
+colnames(ratio1_paper)[1:4] <- c(paste0("beta1", 1:4))
+
+cat(sprintf(paste0("### J = ", j, "{.tabset} \n")))
+cat(sprintf(paste0("#### ratio1-dirinla", "\n")))
+as.data.frame(ratio1_paper)
+}
+
+res_ratio2 <- function(j){
+  N <- c(50, 100, 500, 1000)
+if(j> 40){
+    n_levels_paper <- paste0(N[N==j], "-", N[N==j])
+  }else{
+    n_levels_paper <- paste0(N, "-", j)
+
+  }
+# DIRINLA:ratio2_beta1 and sigma
+ratio2_beta1_hn <- n_levels_paper %>% results["ratio2_beta1_hn",.] %>%
+  do.call(rbind, .) %>% sqrt(.)
+ratio2_sigma1_hn <- n_levels_paper %>% results["ratio2_sigma_hn",.] %>%
+  do.call(rbind, .) %>% sqrt(.)
+ratio2_paper <- cbind(ratio2_beta1_hn, ratio2_sigma1_hn) %>% round(., 4)
+colnames(ratio2_paper)[1:4] <- c(paste0("beta1", 1:4))
+
+cat(sprintf(paste0("#### ratio2-dirinla", "\n")))
+as.data.frame(ratio2_paper)
+
+}
+
+
+res_ratio1_jags <- function(j){
+    N <- c(50, 100, 500, 1000)
+if(j> 40){
+    n_levels_paper <- paste0(N[N==j], "-", N[N==j])
+  }else{
+    n_levels_paper <- paste0(N, "-", j)
+
+  }
+# JAGS:ratio1_beta1 and sigma
+ratio1_beta1_hn_jags <- n_levels_paper %>% res_ratios["ratio1_beta1_hn_jags",.] %>%
+  do.call(rbind, .)
+ratio1_sigma1_hn_jags <- n_levels_paper %>% res_ratios["ratio1_sigma_hn_jags",.] %>%
+  do.call(rbind, .)
+ratio1_paper_jags <- cbind(ratio1_beta1_hn_jags, ratio1_sigma1_hn_jags) %>% round(., 4)
+colnames(ratio1_paper_jags) <- c(paste0("beta1", 1:4), paste0("sigma", 1:2))
+cat(sprintf(paste0("#### ratio1-RJAGS", "\n")))
+as.data.frame(ratio1_paper_jags)
+
+}
+
+res_ratio2_jags <- function(j){
+      N <- c(50, 100, 500, 1000)
+if(j> 40){
+    n_levels_paper <- paste0(N[N==j], "-", N[N==j])
+  }else{
+    n_levels_paper <- paste0(N, "-", j)
+
+  }
+# JAGS:ratio2_beta1 and sigma
+ratio2_beta1_hn_jags <- n_levels_paper %>% res_ratios["ratio2_beta1_hn_jags",.] %>%
+  do.call(rbind, .) %>% sqrt(.)
+ratio2_sigma1_hn_jags <- n_levels_paper %>% res_ratios["ratio2_sigma_hn_jags",.] %>%
+  do.call(rbind, .) %>% sqrt(.)
+ratio2_paper_jags <- cbind(ratio2_beta1_hn_jags, ratio2_sigma1_hn_jags) %>% round(., 4)
+colnames(ratio2_paper_jags) <- c(paste0("beta1", 1:4), paste0("sigma", 1:2))
+
+cat(sprintf(paste0("#### ratio2-RJAGS", "\n")))
+as.data.frame(ratio2_paper_jags)
+}
+
+
+#c(2,5,10, 25, 50, 100, 500, 1000)
+i <- 2
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+  
+i <- 5
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+i <- 10
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+i <- 25
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+i <- 50
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+i <- 100
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+i <- 500
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+i <- 1000
+res_ratio1(j = i)
+res_ratio1_jags(j = i)
+res_ratio2(j=i)
+res_ratio2_jags(j=i)
+
+``` 
+
+
+<!-- ### N = 100 {.tabset} -->
+
+<!-- ```{r, results = 'asis'} -->
+<!-- summary_print(N = 100, J = 5) -->
+<!-- summary_print(N = 100, J = 10) -->
+<!-- summary_print(N = 100, J = 25) -->
+<!-- summary_print(N = 100, J = 50) -->
+<!-- ``` -->
+
+<!-- ![](simulation4/examples_simulation4_sigma_50_5.png){width=100%}
+
+
+<!-- ### n = 50 {.tabset} -->
+
+<!-- #### J = 50 -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_slopes_50.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_tau_50.png){width=75%} -->
+
+<!-- #### J = 25  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_slopes_50-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_tau_50-1.png){width=75%} -->
+
+<!-- #### J = 10  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_slopes_50-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_tau_50-1.png){width=75%} -->
+
+<!-- #### J = 5  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_slopes_50-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_tau_50-1.png){width=75%} -->
+
+
+<!-- #### J = 2  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_slopes_50-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_tau_50-1.png){width=75%} -->
+
+
+<!-- ### n = 100 {.tabset} -->
+
+<!-- #### J = 100 -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_slopes_100.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_tau_100.png){width=75%} -->
+
+<!-- #### J = 50  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_slopes_100-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_tau_100-1.png){width=75%} -->
+
+<!-- #### J = 20  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_slopes_100-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_tau_100-1.png){width=75%} -->
+
+<!-- #### J = 10  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_slopes_100-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_tau_100-1.png){width=75%} -->
+
+
+<!-- #### J = 4  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_slopes_100-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_tau_100-1.png){width=75%} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ### n = 300 {.tabset} -->
+
+<!-- #### J = 300 -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_slopes_300.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_tau_300.png){width=75%} -->
+
+<!-- #### J = 150  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_slopes_300-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_tau_300-1.png){width=75%} -->
+
+<!-- #### J = 60  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_slopes_300-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_tau_300-1.png){width=75%} -->
+
+<!-- #### J = 30  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_slopes_300-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_tau_300-1.png){width=75%} -->
+
+
+<!-- #### J = 12  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_slopes_300-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_tau_300-1.png){width=75%} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ### n = 500 {.tabset} -->
+
+<!-- #### J = 500 -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_slopes_500.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_1/examples_simulation4_tau_500.png){width=75%} -->
+
+<!-- #### J = 250  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_slopes_500-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_2/examples_simulation4_tau_500-1.png){width=75%} -->
+
+<!-- #### J = 100  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_slopes_500-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_5/examples_simulation4_tau_500-1.png){width=75%} -->
+
+<!-- #### J = 50  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_slopes_500-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_10/examples_simulation4_tau_500-1.png){width=75%} -->
+
+
+<!-- #### J = 20  -->
+<!-- **Parameters**  -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_slopes_500-1.png){width=100%} -->
+
+<!-- **Hyperparameters** -->
+
+<!-- ![](simulation4/JUST_SLOPES2_25/examples_simulation4_tau_500-1.png){width=75%} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
