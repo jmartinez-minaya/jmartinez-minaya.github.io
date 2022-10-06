@@ -38,7 +38,7 @@ library(knitr)
 ```
 
 # Introduction
-This document shows the supplementary material of the article entitled "The Integrated nested Laplace approximation for fitting Dirichlet regression models''. In particular, we show all the results obtained in the simulation scenarios (1,2 and 3) presented in the paper.
+This document shows the supplementary material of the article entitled "The Integrated nested Laplace approximation for fitting Dirichlet regression models''. In particular, we show all the results obtained in the simulation scenarios (1,2 and 3) presented in the paper. Version `1.0.5` of the `dirinla` R-package (https://github.com/inlabru-org/dirinla) has been employed.
 
 
 # Simulation 1 {.tabset}
