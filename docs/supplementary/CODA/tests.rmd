@@ -334,7 +334,7 @@ times <- n_levels_paper %>% results["times",.] %>%
   do.call(rbind, .)
 colnames(times) <- c("R-JAGS", "dirinla-pc", "long R-JAGS", "dirinla-hn")
 
-cat(sprintf(paste0("### J = ", j, "{.tabset} \n")))
+cat(sprintf(paste0("### I = ", j, "{.tabset} \n")))
 as.data.frame(times)
 }
 
@@ -377,7 +377,7 @@ res_times(j = i)
 summary_print <- function(N, J)
 {
   cat("\n")
-  cat(sprintf(paste0("#### J = ", J, "\n")))
+  cat(sprintf(paste0("#### I = ", J, "\n")))
   cat("**Parameters** \n")
   cat(paste0("![](simulation4/examples_simulation4_slopes_", N, "_", J, "/examples_simulation4_slopes_", N, "_", J, "-1.png){width=100%}"))
 
