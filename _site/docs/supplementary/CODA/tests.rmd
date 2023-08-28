@@ -38,7 +38,7 @@ library(knitr)
 ```
 
 # Introduction
-This document shows the supplementary material of the article entitled "The Integrated nested Laplace approximation for fitting Dirichlet regression models''. In particular, we show all the results obtained in the simulation scenarios (1,2 and 3) presented in the paper.
+This document shows the supplementary material of the article entitled "The Integrated nested Laplace approximation for fitting Dirichlet regression models''. In particular, we show all the results obtained in the simulation scenarios (1,2 and 3) presented in the paper. Version `1.0.5` of the `dirinla` R-package (https://github.com/inlabru-org/dirinla) has been employed.
 
 
 # Simulation 1 {.tabset}
@@ -334,7 +334,7 @@ times <- n_levels_paper %>% results["times",.] %>%
   do.call(rbind, .)
 colnames(times) <- c("R-JAGS", "dirinla-pc", "long R-JAGS", "dirinla-hn")
 
-cat(sprintf(paste0("### J = ", j, "{.tabset} \n")))
+cat(sprintf(paste0("### I = ", j, "{.tabset} \n")))
 as.data.frame(times)
 }
 
@@ -377,7 +377,7 @@ res_times(j = i)
 summary_print <- function(N, J)
 {
   cat("\n")
-  cat(sprintf(paste0("#### J = ", J, "\n")))
+  cat(sprintf(paste0("#### I = ", J, "\n")))
   cat("**Parameters** \n")
   cat(paste0("![](simulation4/examples_simulation4_slopes_", N, "_", J, "/examples_simulation4_slopes_", N, "_", J, "-1.png){width=100%}"))
 
