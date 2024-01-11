@@ -17,7 +17,8 @@ pagetitle: "Joaquín Martínez Minaya"
   - Tutorials:
 
     1. [Fitting LNDMs with fixed effects](https://github.com/hrue/r-inla/commit/3577c1b030a8460ff7194893bd97e57a62a1399d)
-    2. [Fitting LNDMs with fixed and random effects](supplementary/INLAComp/my-vignette.html)
+    2. [Fitting Spatial LNDMs. A simulation](supplementary/INLAComp/simulations.html)
+    3. [Fitting LNDMs with fixed and random effects. A real problem](supplementary/INLAComp/my-vignette.html)
     
 ---
 
