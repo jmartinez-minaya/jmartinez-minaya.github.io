@@ -6,5 +6,79 @@ pagetitle: "Joaquín Martínez Minaya"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-## Publications
-Under construction :(
+During my 9 years of experience as a researcher, I have collaborated with diverse research groups on projects spanning regional, national, and international scopes. My dedication has remained steadfastly centered on the realms of Statistics and Data Science, with substantial contributions made in three distinct research lines:
+
+**L1. Spatio-Temporal Statistics in Species Distribution Modeling**
+My doctoral thesis centered on this first research line, emphasizing the application of spatio-temporal modeling to plant and marine species. This work laid the foundation for my expertise in understanding and analyzing species distribution.
+
+**L2. Bayesian Computational Methods**
+Originating in the latter stages of my doctoral research, I ventured into developing an R package for implementing models in the context of compositional data. To date, Bayesian computational methods, particularly employing techniques such as the Integrated Nested Laplace Approximation (INLA) and Markov Chain Monte Carlo Methods (MCMC), remain a cornerstone of my ongoing research endeavors.
+
+**L3. Bayesian Statistical Learning in Health and Environment**
+This is the most recent addition to my research portfolio, this line emerged during my postdoctoral tenure. The application of Bayesian learning principles in health and environmental contexts has become a substantial part of my current projects, with a particular emphasis on health applications. 
+
+
+## Submitted papers
+
+1. (L1, L3) Adin, A., Krainski, E., Lenzi, A., Liu, Z., **Martínez-Minaya, J.**, and Rue, H. (2023). Automatic cross-validation in structured models: Is it time to leave out leave-one-out? Submitted to Spatial Statistics. URL: https://arxiv.org/abs/2311.17100.
+
+2. (L2) **Martínez-Minaya**, J., and Rue, H. (2023). A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance. Submitted to Statistics and Computing. URL: https://arxiv.org/abs/2308.13928.
+
+3. (L1, L2) Figueira-Pereira, M., Barber, X., Conesa, D., López-Quílez, A., **Martínez-Minaya, J.**, Paradinas, I., and Pennino, M. G. (2023). Bayesian feedback in the framework of ecological sciences. Submitted to Ecography. URL: https://arxiv.org/abs/2305.17922.
+
+## Published papers
+
+### 2023
+1.	(L2) **Martínez-Minaya, J.**, Lindgren, F., López-Quílez, A., Simpson, D., and Conesa, D. (2023). The Integrated Nested Laplace Approximation for Fitting Dirichlet Regression Models. Journal of Computational and Graphical Statistics, 1-19. DOI: https://doi.org/10.1080/10618600.2022.2144330
+
+2.	(L3) Bronte, O., García-García, F., Lee, D.-J., Urrutia, I., Uranga, A., Nieves, M., **Martínez-Minaya, J.**, Quintana, J. M., Arostegui, I., Zalacain, R., Ruiz-Iturriaga, L. A., Serrano, L., Menéndez, R., Méndez, R., Torres, A., Cilloniz, C., España, P. P., COVID-19 and Air Pollution Working Group (2023). Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia. Science of The Total Environment, 164877. DOI: https://doi.org/10.1016/j.scitotenv.2023.164877
+
+3. (L3) Hayet-Otero, M., García-García, F., Lee, D.-J., ****Martínez-Minaya, J.****, España Yandiola, P. P., Urrutia Landa, I., Nieves Ermecheo, M., Quintana, J. M., Menéndez, R., Torres, A., Zalacain Jorge, R., Arostegui, I., with the COVID-19 and Air Pollution Working Group (2023). Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques. Plos one, 18(4), e0284150. DOI: https://doi.org/10.1371/journal.pone.0284150
+
+4.	(L1) Sarzo, B., **Martínez-Minaya, J.**, Pennino, M. G., Conesa, D., and Coll, M. (2023). Modelling seabirds biodiversity through Bayesian Spatial Beta regression models: A proxy to inform marine protected areas in the Mediterranean Sea. Marine Environmental Research, 185, 105860. DOI: 10.1016/j.marenvres.2022.105860
+
+### 2022
+
+5.	(L3) Triguero-Mas, M., Anguelovski, I., Connolly, J. J. T., Martin, N., Matheney, A., Cole, H. V. S., Pérez-Del-Pulgar, C., García-Lamarca, M., Shokry, G., Argüelles, L., Conesa, D., Gallez, E., Sarzo, B., Beltrán, M. A., López Máñez, J., **Martínez-Minaya, J.** (2022). Exploring green gentrification in 28 global North cities: the role of urban parks and other types of greenspaces. Environmental Research Letters, 17(10), 104035. DOI: https://doi.org/10.1088/1748-9326/ac9325
+
+6. (L1) Carmezim, J., Pennino, M. G., **Martínez-Minaya, J.**, Conesa, D., and Coll, M. (2022). A mesoscale analysis of relations between fish species richness and environmental and anthropogenic pressures in the Mediterranean Sea. Marine Environmental Research, 180, 105702. DOI: https://doi.org/10.1016/j.marenvres.2022.105702
+
+7.	(L3) Anguelovski, I., Connolly, J. J. T., Cole, H., Garcia-Lamarca, M., Triguero-Mas, M., Baró, F., Martin, N., Conesa, D., Shokry, G., Pérez del Pulgar, C., Argüelles Ramos, L., Matheney, A., Gallez, E., Oscilowicz, E., López Máñez, J., Sarzo, B., Beltrán, M. A., and **Martínez-Minaya, J.** (2022). Green gentrification in European and North American cities. Nature Communications, 13(1), 3816. DOI: https://doi.org/10.1038/s41467-022-31572-1
+
+### 2021
+8. (L1) Barber, X., Conesa, D., López-Quílez, A., **Martínez-Minaya, J.**, Paradinas, I., and Pennino, M. G. (2021). Incorporating biotic information in species distribution models: A coregionalized approach. Mathematics, 9(4), 417. DOI: https://doi.org/10.3390/math9040417
+
+9.	(L1) **Martínez-Minaya, J.**, Conesa, D., López-Quílez, A., Mira, J. L., and Vicent, A. (2021). Modeling Inoculum Availability of Plurivorosphaerella nawae in Persimmon Leaf Litter with Bayesian Beta Regression. Phytopathology, 111(7), 1184-1192. DOI: https://doi.org/10.1094/PHYTO-08-20-0359-R
+
+
+### 2020
+10.	(L1) Cendoya, M., **Martínez-Minaya, J.**, Dalmau, V., Ferrer, A., Saponari, M., Conesa, D., López-Quílez, A., and Vicent, A. (2020). Spatial Bayesian modeling applied to the surveys of Xylella fastidiosa in Alicante (Spain) and Apulia (Italy). Frontiers in Plant Science, 11, 1204. DOI: https://doi.org/10.3389/fpls.2020.01204
+
+11. (L1) Castilla, A. R., Méndez-Vigo, B., Marcer, A., **Martínez-Minaya, J.**, Conesa, D., Picó, F. X., and Alonso-Blanco, C. (2020). Ecological, genetic and evolutionary drivers of regional genetic differentiation in Arabidopsis thaliana. BMC Evolutionary Biology, 20(71). DOI: https://doi.org/10.1186/s12862-020-01635-2
+
+12. (L1) Marimon, N., Eduardo, I., **Martínez-Minaya, J.**, Vicent, A., and Luque, J. (2020). A decision support system based on degree-days to initiate fungicide spray programs for peach powdery mildew in Catalonia, Spain. Plant Disease, 104(9), 2418-2425. DOI: https://doi.org/10.1094/PDIS-10-19-2130-RE
+
+13. (L3) Lázaro, E., Makowski, D., **Martínez-Minaya, J.**, and Vicent, A. (2020). Comparison of frequentist and Bayesian meta-analysis models for assessing the efficacy of decision support systems in reducing fungal disease incidence. Agronomy, 10(4), 560. DOI: https://doi.org/10.3390/agronomy10040560
+
+### 2019
+
+14. (L1) **Martínez-Minaya, J.**, Conesa, D., Bakka, H., and Pennino, M. G. (2019). Dealing with physical barriers in bottlenose dolphin (Tursiops truncatus) distribution. Ecological Modelling, 406, 44-49. DOI: https://doi.org/10.1016/j.ecolmodel.2019.05.013
+
+15.	(L1) Martínez‐Minaya, J., Conesa, D., Fortin, M. J., Alonso‐Blanco, C., Picó, F. X., and Marcer, A. (2019). A hierarchical Bayesian Beta regression approach to study the effects of geographical genetic structure and spatial autocorrelation on species distribution range shifts. Molecular Ecology Resources, 19(4), 929-943. DOI: https://doi.org/10.1111/1755-0998.13024
+
+### 2018
+
+16.	(L1) **Martínez-Minaya, J.**, Cameletti, M., Conesa, D., and Pennino, M. G. (2018). Species distribution modeling: a statistical review with focus on spatio-temporal issues. Stochastic Environmental Research and Risk Assessment, 32(11), 3227-3244. DOI: https://doi.org/10.1007/s00477-018-1548-7
+
+
+17.	(L1) **Martínez-Minaya, J.**, Conesa, D., López-Quílez, A., and Vicent, A. (2018). Spatial and climatic factors associated with the geographical distribution of citrus black spot disease in South Africa: A Bayesian latent Gaussian model approach. European Journal of Plant Pathology, 151(4), 991-1007. DOI: https://doi.org/10.1007/s10658-018-1435-6
+
+
+### 2017
+
+18. (L1) **Martínez-Minaya, J.**, Conesa, D., López-Quílez, A., and Vicent, A. (2017). Response to the letter on "Climatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa" by Fourie et al. European Journal of Plant Pathology, 1-6. DOI: https://doi.org/10.1007/s10658-017-1163-3
+
+
+### 2015
+
+19. (L1) **Martínez-Minaya, J.**, Conesa, D., López-Quílez, A., and Vicent, A. (2015). Climatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa. European Journal of Plant Pathology, 143, 69-83. DOI: https://doi.org/10.1007/s10658-015-0666-z
