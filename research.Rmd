@@ -6,13 +6,12 @@ pagetitle: "Joaquín Martínez Minaya"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-During my 9 years of experience as a researcher, I have collaborated with diverse research groups on projects spanning regional, national, and international scopes. My dedication has remained steadfastly centered on the realms of Statistics and Data Science, with substantial contributions made in three distinct research lines:
-
+## Research lines
 **L1. Spatio-Temporal Statistics in Species Distribution Modeling**
-My doctoral thesis centered on this first research line, emphasizing the application of spatio-temporal modeling to plant and marine species. This work laid the foundation for my expertise in understanding and analyzing species distribution.
+Application of spatio-temporal modeling to plant and marine species. 
 
 **L2. Bayesian Computational Methods**
-Originating in the latter stages of my doctoral research, I ventured into developing an R package for implementing models in the context of compositional data. To date, Bayesian computational methods, particularly employing techniques such as the Integrated Nested Laplace Approximation (INLA) and Markov Chain Monte Carlo Methods (MCMC), remain a cornerstone of my ongoing research endeavors.
+Bayesian computational methods, particularly employing techniques such as the Integrated Nested Laplace Approximation (INLA) and Markov Chain Monte Carlo Methods (MCMC), remain a cornerstone of my ongoing research endeavors.
 
 **L3. Bayesian Statistical Learning in Health and Environment**
 This is the most recent addition to my research portfolio, this line emerged during my postdoctoral tenure. The application of Bayesian learning principles in health and environmental contexts has become a substantial part of my current projects, with a particular emphasis on health applications. 
@@ -26,6 +25,8 @@ This is the most recent addition to my research portfolio, this line emerged dur
 
 3. (L1, L2) Figueira-Pereira, M., Barber, X., Conesa, D., López-Quílez, A., **Martínez-Minaya, J.**, Paradinas, I., and Pennino, M. G. (2023). Bayesian feedback in the framework of ecological sciences. Submitted to Ecography. URL: https://arxiv.org/abs/2305.17922.
 
+
+
 ## Published papers
 
 ### 2023
@@ -33,7 +34,7 @@ This is the most recent addition to my research portfolio, this line emerged dur
 
 2.	(L3) Bronte, O., García-García, F., Lee, D.-J., Urrutia, I., Uranga, A., Nieves, M., **Martínez-Minaya, J.**, Quintana, J. M., Arostegui, I., Zalacain, R., Ruiz-Iturriaga, L. A., Serrano, L., Menéndez, R., Méndez, R., Torres, A., Cilloniz, C., España, P. P., COVID-19 and Air Pollution Working Group (2023). Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia. Science of The Total Environment, 164877. DOI: https://doi.org/10.1016/j.scitotenv.2023.164877
 
-3. (L3) Hayet-Otero, M., García-García, F., Lee, D.-J., ****Martínez-Minaya, J.****, España Yandiola, P. P., Urrutia Landa, I., Nieves Ermecheo, M., Quintana, J. M., Menéndez, R., Torres, A., Zalacain Jorge, R., Arostegui, I., with the COVID-19 and Air Pollution Working Group (2023). Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques. Plos one, 18(4), e0284150. DOI: https://doi.org/10.1371/journal.pone.0284150
+3. (L3) Hayet-Otero, M., García-García, F., Lee, D.-J., **Martínez-Minaya, J.**, España Yandiola, P. P., Urrutia Landa, I., Nieves Ermecheo, M., Quintana, J. M., Menéndez, R., Torres, A., Zalacain Jorge, R., Arostegui, I., with the COVID-19 and Air Pollution Working Group (2023). Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques. Plos one, 18(4), e0284150. DOI: https://doi.org/10.1371/journal.pone.0284150
 
 4.	(L1) Sarzo, B., **Martínez-Minaya, J.**, Pennino, M. G., Conesa, D., and Coll, M. (2023). Modelling seabirds biodiversity through Bayesian Spatial Beta regression models: A proxy to inform marine protected areas in the Mediterranean Sea. Marine Environmental Research, 185, 105860. DOI: 10.1016/j.marenvres.2022.105860
 

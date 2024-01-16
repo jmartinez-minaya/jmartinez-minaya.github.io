@@ -23,4 +23,4 @@ navbar:
       href: https://www.linkedin.com/in/joaqu%C3%ADn-mart%C3%ADnez-minaya-7a803171/?originalSubdomain=es
 output:
   html_document:
-    theme: darkly
+    theme: cerulean
