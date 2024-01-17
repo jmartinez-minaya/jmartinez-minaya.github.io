@@ -6,7 +6,36 @@ pagetitle: "Joaquín Martínez-Minaya"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
-<img src="images/foto_joaq.png" style="width:30%; border:5px solid; margin-right: 20px" align="left">
+
+<div style="display: flex; justify-content: space-between;">
+
+<div style="width: 30%; text-align: left;">
+
+<img src="images/foto_joaq.png" alt="Joaq's Photo" style="width: 100%; border: 5px solid; margin-right: 20px;">
+
+</div>
+<div style="width: 65%;">
+### Contact details
+
+- **Department of Applied Statistics and Operations Research and Quality**
+
+- **Polytechnic University of Valencia**
+
+- **Camí de Vera, SN, 46020, Valencia, Spain**
+
+- **tlf: +34 96 387 70 00 (84918)**
+
+- **email: jmarmin@eio.upv.es**
+
+</div>
+
+
+
+</div>
+
+
+
+### Brief description
 
 Welcome to this place! ;)
 
