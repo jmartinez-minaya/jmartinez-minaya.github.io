@@ -16,7 +16,7 @@ navbar:
     - icon: ai-cv ai-lg
       href: ./files/resume.pdf
     - icon: fab fa-github fa-lg
-      href: http://github.com/ximo1990/
+      href: https://github.com/jmartinez-minaya
     - icon: fab fa-twitter fa-lg
       href: https://twitter.com/JoaquinM_Minaya
     - icon: fab fa-linkedin fa-lg

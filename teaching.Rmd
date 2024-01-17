@@ -3,8 +3,56 @@ title: " "
 pagetitle: "Joaquín Martínez Minaya"
 ---
 
-<link rel="stylesheet" href="styles.css" type="text/css">
-<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
+<!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+<!-- <link rel="stylesheet" href="academicicons/css/academicons.min.css"/> -->
 
-## Teaching
-Under construction! Sorry :(
+### Specialization Courses
+
+- [Be Bayesian my friend](https://github.com/jmartinez-minaya/Be-Bayesian-my-friend). his is a course for everyone who want to start learning Bayesian Inference. I hope I can help you understand Bayesian inference as much as I would like to.
+
+- [Bayesian Inference Using R-INLA](https://github.com/jmartinez-minaya/Bayesian-INLA). This is a course for everyone who want to start learning Bayesian Inference using INLA. It has been constructed combining material of different sources: tutorial and books which are referenced at the end of each presentation.
+
+
+
+
+
+### University Courses
+
+#### 2023-2024
+
+  - **Predictive Models**. Bachelor's degree in Data Science
+  
+  - **Econometrics**. Double degree in Telecommunications Engineering and Business Administration and Management
+  
+  - **Econometrics**. Double degree in Food Technology and Business Administration and Management.
+  
+  - **Econometrics**. Bachelor's degree in Business Administration and Management.
+  
+  - **Bayesian inference using R-INLA**. Master's degree in Biostatistics.
+
+#### 2022-2023
+  
+  - **Statistics**. Bachelor's degree in Aerospace Engineering
+  
+  - **Statistics**. Bachelor's degree in Mechanical Engineering
+  
+  - **Statistics**. Bachelor's degree in Industrial Engineering
+  
+  - **Econometrics**. Bachelor's degree in Business Administration and Management.
+  
+  - **Bayesian inference using R-INLA**. Master's degree in BioStatistics.
+
+
+#### 2021-2022
+  
+  - **Statistics**. Bachelor's degree in Aerospace Engineering
+  
+  - **Statistics**. Bachelor's degree in Mechanical Engineering
+  
+  - **Statistics**. Bachelor's degree in Industrial Engineering
+  
+  - **Econometrics**. Bachelor's degree in Business Administration and Management.
+  
+  - **Bayesian inference using R-INLA**. Master's degree in Biostatistics.
+
+
