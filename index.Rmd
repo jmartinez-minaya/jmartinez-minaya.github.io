@@ -10,10 +10,14 @@ pagetitle: "Joaquín Martínez-Minaya"
 
 Welcome to this place! ;)
 
-I am **Joaquín Martínez-Minaya**, currently working as an Assistant Professor in the Department of Applied Statistics and Operations Research and Quality at Polytechnic University of Valencia. My research focus spans a variety of areas, with a primary emphasis on **Spatio-temporal Statistics**, **Bayesian Computing**, **Mixed Models** or **Compositional Data Analysis**. Also applying these research interests to the fields of species distribution, healthcare, and environmental studies. 
+I am **Joaquín Martínez-Minaya**, currently working as an Assistant Professor in the Department of Applied Statistics and Operations Research and Quality at Polytechnic University of Valencia. My primary interest lies in **Applied Bayesian Statistics**, where I am actively engaged in advancing the field of **Species Distribution Modeling** through the application of **Spatio-Temporal Statistics**. This involves a comprehensive exploration of the dynamic behaviors exhibited by plant and marine species, utilizing sophisticated modeling techniques to enhance our understanding of their spatial and temporal patterns.
+
+Currently, **health and environment** stand as fundamental pillars of my research, and I am currently involved in innovative projects such as **studying microbiota** using multivariate hierarchical Bayesian models, assessing **measurement agreement** through Bayesian mixed models, conducting **medical image analysis** with Bayesian spatio-temporal models, and applying spatial statistics to the field of **Spatial Transcriptomics**.
+
+Moreover, my expertise extends to **Bayesian computational methods**, where I specialize in implementing techniques within the framework of the **Integrated Nested Laplace Approximation (INLA)** and **Markov Chain Monte Carlo Methods (MCMC)**. This computational aspect forms an integral part of my holistic approach to addressing diverse challenges within the health and environmental sectors.
 
 
-<div style="height: 2.5cm;"></div>
+<!-- <div style="height: 2.5cm;"></div> -->
 
 
 ### Positions
@@ -24,9 +28,9 @@ I am **Joaquín Martínez-Minaya**, currently working as an Assistant Professor 
 
   - (2016 -2019) **PhD candidate**, Department of Statistics and Operations Research, University of Valencia.
   
-  - (2014-2016) **Junior statistician**. Valencian Institute for Agricultural Research.
+  - (2014-2016) **Biostatistician**. Valencian Institute for Agricultural Research.
 
-  - (2014) **Junior statistician**. Data Science department. Experior S. L.
+  - (2014) **Biostatistician**. Data Science department. Experior S. L.
 
 
 ### Education
