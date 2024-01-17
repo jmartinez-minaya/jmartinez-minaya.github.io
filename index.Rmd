@@ -17,13 +17,13 @@ pagetitle: "Joaquín Martínez-Minaya"
 <div style="width: 65%;">
 ### Contact details
 
-- **Department of Applied Statistics and Operations Research and Quality**
+- ***Department of Applied Statistics and Operations Research and Quality***
 
-- **Polytechnic University of Valencia**
+- ***Polytechnic University of Valencia***
 
-- **Camí de Vera, SN, 46020, Valencia, Spain**
+- ***Camí de Vera, SN, 46020, Valencia, Spain***
 
-- **tlf: +34 96 387 70 00 (84918)**
+- ***tlf: +34 96 387 70 00 (84918)***
 
 - **email: jmarmin@eio.upv.es**
 
