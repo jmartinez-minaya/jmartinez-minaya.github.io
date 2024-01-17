@@ -3,8 +3,8 @@ title: " "
 pagetitle: "Joaquín Martínez Minaya"
 ---
 
-<!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
-<!-- <link rel="stylesheet" href="academicicons/css/academicons.min.css"/> -->
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
 ## Research lines
 **L1. Spatio-Temporal Statistics in Species Distribution Modeling**
