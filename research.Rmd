@@ -5,7 +5,7 @@ pagetitle: "Joaquín Martínez Minaya"
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
-
+<div align="justify">
 ## Research lines
 **L1. Spatio-Temporal Statistics in Species Distribution Modeling**
 Application of spatio-temporal modeling to plant and marine species. 
@@ -83,3 +83,5 @@ This is the most recent addition to my research portfolio, this line emerged dur
 ### 2015
 
 19. (L1) **Martínez-Minaya, J.**, Conesa, D., López-Quílez, A., and Vicent, A. (2015). Climatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa. European Journal of Plant Pathology, 143, 69-83. DOI: https://doi.org/10.1007/s10658-015-0666-z
+
+</div>

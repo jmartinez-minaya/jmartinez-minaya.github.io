@@ -6,6 +6,7 @@ pagetitle: "Joaquín Martínez Minaya"
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="academicicons/css/academicons.min.css"/>
 
+<div align="justify">
 ## Supplementary material for papers
 
 - **INLAComp project (2023)**. 
@@ -34,3 +35,4 @@ pagetitle: "Joaquín Martínez Minaya"
     2. [Fitting Dirichlet regression with random effects](supplementary/CODA/fixed/my-vignette_fixed.html)
     3. [Simulation results using fixed and i.i.d. random effects](supplementary/CODA/tests.html)
 
+</div>

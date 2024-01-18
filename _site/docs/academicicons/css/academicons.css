@@ -523,3 +523,9 @@
   top: -9999px;
   left: -9999px;
 }
+
+
+/*Included by my*/
+body {
+  text-align: justify;
+}
