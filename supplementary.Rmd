@@ -9,11 +9,11 @@ pagetitle: "Joaquín Martínez Minaya"
 <div align="justify">
 ## Supplementary material for papers
 
-### 2023
+### 2024
 
 - **INLAComp project**
 
-  - Manuscript [A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance](https://arxiv.org/abs/2308.13928)
+  - Manuscript [A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance](https://link.springer.com/article/10.1007/s11222-024-10427-3)
   
   - R-Code: [INLAComp](https://github.com/jmartinez-minaya/INLAcomp)
   
@@ -25,6 +25,7 @@ pagetitle: "Joaquín Martínez Minaya"
     
 ---
 
+### 2023
 
 - **dirinla project**
   
