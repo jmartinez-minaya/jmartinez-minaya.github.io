@@ -40,7 +40,7 @@ pagetitle: "Joaquín Martínez-Minaya"
 <div align="justify">
 Welcome to this place! ;)
 
-I am **Joaquín Martínez-Minaya**, currently working as an Assistant Professor in the Department of Applied Statistics and Operations Research and Quality at Polytechnic University of Valencia. My primary interest lies in **Applied Bayesian Statistics**, where I am actively engaged in advancing the field of **Species Distribution Modeling** through the application of **Spatio-Temporal Statistics**. This involves a comprehensive exploration of the dynamic behaviors exhibited by plant and marine species, utilizing sophisticated modeling techniques to enhance our understanding of their spatial and temporal patterns.
+I am **Joaquín Martínez-Minaya**, Assistant Professor in the Department of Applied Statistics and Operations Research and Quality at Polytechnic University of Valencia. My primary interest lies in **Applied Bayesian Statistics**, where I am actively engaged in advancing the field of **Species Distribution Modeling** through the application of **Spatio-Temporal Statistics**. This involves a comprehensive exploration of the dynamic behaviors exhibited by plant and marine species, utilizing sophisticated modeling techniques to enhance our understanding of their spatial and temporal patterns.
 
 Currently, **health and environment** stand as fundamental pillars of my research, and I am currently involved in innovative projects such as **studying microbiota** using multivariate hierarchical Bayesian models, assessing **measurement agreement** through Bayesian mixed models, conducting **medical image analysis** with Bayesian spatio-temporal models, and applying spatial statistics to the field of **Spatial Transcriptomics**.
 
