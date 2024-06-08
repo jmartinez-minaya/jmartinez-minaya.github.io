@@ -4,6 +4,9 @@ navbar:
   left:
     - text: "Research"
       href: research.html
+      submenu:
+        - text: "Papers"
+          href: research_papers.html
     - text: "Teaching"
       href: teaching.html
     - text: "Supplementary material"
