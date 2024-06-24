@@ -1,0 +1,1361 @@
+<!DOCTYPE html><html lang="es-es" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Joaquín Martínez-Minaya" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="&lt;div style=&#39;text-align: justify;&#39;&gt;Compositional Data Analysis (CoDa) has gained popularity in recent years. This type of data consists of values from disjoint categories that sum up to a constant. Both Dirichlet regression and logistic-normal regression have become popular as CoDa analysis methods. However, fitting this kind of multivariate models presents challenges, especially when structured random effects are included in the model, such as temporal or spatial effects. To overcome these challenges, we propose the logistic-normal Dirichlet Model (LNDM). We seamlessly incorporate this approach into the R-INLA package, facilitating model fitting and model prediction within the framework of Latent Gaussian Models. Moreover, we explore metrics like Deviance Information Criteria, Watanabe Akaike information criterion, and cross-validation measure conditional predictive ordinate for model selection in R-INLA for CoDa. Illustrating LNDM through two simulated examples and with an ecological case study on Arabidopsis thaliana in the Iberian Peninsula, we underscore its potential as an effective tool for managing CoDa and large CoDa databases.&lt;/div&gt;" />
+
+  
+    <link rel="alternate" hreflang="en" href="https://ximo1990.github.io/en/publication/22.martinez-minaya_and_rue_2024/" />
+  
+  <link rel="alternate" hreflang="es-es" href="https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#003f5c" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6781ddd72703e5e1bbf862d40a743a07.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z04H7RM37H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-Z04H7RM37H', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/es/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@wowchemy" />
+    <meta property="twitter:creator" content="@wowchemy" />
+  
+  <meta property="og:site_name" content="Joaquín Martínez-Minaya" />
+  <meta property="og:url" content="https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/" />
+  <meta property="og:title" content="A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance | Joaquín Martínez-Minaya" />
+  <meta property="og:description" content="&lt;div style=&#39;text-align: justify;&#39;&gt;Compositional Data Analysis (CoDa) has gained popularity in recent years. This type of data consists of values from disjoint categories that sum up to a constant. Both Dirichlet regression and logistic-normal regression have become popular as CoDa analysis methods. However, fitting this kind of multivariate models presents challenges, especially when structured random effects are included in the model, such as temporal or spatial effects. To overcome these challenges, we propose the logistic-normal Dirichlet Model (LNDM). We seamlessly incorporate this approach into the R-INLA package, facilitating model fitting and model prediction within the framework of Latent Gaussian Models. Moreover, we explore metrics like Deviance Information Criteria, Watanabe Akaike information criterion, and cross-validation measure conditional predictive ordinate for model selection in R-INLA for CoDa. Illustrating LNDM through two simulated examples and with an ecological case study on Arabidopsis thaliana in the Iberian Peninsula, we underscore its potential as an effective tool for managing CoDa and large CoDa databases.&lt;/div&gt;" /><meta property="og:image" content="https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/featured.jpg" />
+    <meta property="twitter:image" content="https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/featured.jpg" /><meta property="og:locale" content="es-es" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2024-03-14T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2024-03-14T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/"
+  },
+  "headline": "A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance",
+  
+  "image": [
+    "https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/featured.jpg"
+  ],
+  
+  "datePublished": "2024-03-14T00:00:00Z",
+  "dateModified": "2024-03-14T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Joaquín Martínez-Minaya"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Joaquín Martínez-Minaya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "\u003cdiv style='text-align: justify;'\u003eCompositional Data Analysis (CoDa) has gained popularity in recent years. This type of data consists of values from disjoint categories that sum up to a constant. Both Dirichlet regression and logistic-normal regression have become popular as CoDa analysis methods. However, fitting this kind of multivariate models presents challenges, especially when structured random effects are included in the model, such as temporal or spatial effects. To overcome these challenges, we propose the logistic-normal Dirichlet Model (LNDM). We seamlessly incorporate this approach into the R-INLA package, facilitating model fitting and model prediction within the framework of Latent Gaussian Models. Moreover, we explore metrics like Deviance Information Criteria, Watanabe Akaike information criterion, and cross-validation measure conditional predictive ordinate for model selection in R-INLA for CoDa. Illustrating LNDM through two simulated examples and with an ecological case study on Arabidopsis thaliana in the Iberian Peninsula, we underscore its potential as an effective tool for managing CoDa and large CoDa databases.\u003c/div\u003e"
+}
+</script>
+
+  
+
+  
+
+  
+
+
+  <title>A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance | Joaquín Martínez-Minaya</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="40caa41847ca0d575a2ba7aedf8a8765" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.1ee5462d74c6c0de1f8881b384ecc58d.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Cerrar"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Buscar...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/es/">Joaquín Martínez-Minaya</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#about"><span>Sobre mí</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/es/publication/"><span>Investigación</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/teaching/"><span>Docencia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/supplementary/"><span>Material suplementario</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        
+        
+        
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#"  data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Idiomas">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">Español</span></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>Español</span>
+            </div>
+            
+            <a class="dropdown-item" href="https://ximo1990.github.io/en/publication/22.martinez-minaya_and_rue_2024/">
+              <span>English</span>
+            </a>
+            
+          </div>
+        </li>
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Joaquín Martínez-Minaya</span>, <span >
+      Haavard Rue</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    marzo, 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://link.springer.com/article/10.1007/s11222-024-10427-3" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
+        data-filename="/es/publication/22.martinez-minaya_and_rue_2024/cite.bib">
+  Citas
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/jmartinez-minaya/INLAcomp" target="_blank" rel="noopener">
+  Código
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.1007/s11222-024-10427-3" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 518px;">
+  <div style="position: relative">
+    <img src="/es/publication/22.martinez-minaya_and_rue_2024/featured_hu31f9703fd5d30f82524ba178d27cb7cf_166611_720x2500_fit_q75_h2_lanczos.webp" width="720" height="518" alt="" class="featured-image">
+    <span class="article-header-caption">Image credit: <a href="https://link.springer.com/article/10.1007/s11222-024-10427-3" target="_blank" rel="noopener"><strong>Martinez-Minaya and Rue (2024)</strong></a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Resumen</h3>
+    <p class="pub-abstract"><div style='text-align: justify;'>Compositional Data Analysis (CoDa) has gained popularity in recent years. This type of data consists of values from disjoint categories that sum up to a constant. Both Dirichlet regression and logistic-normal regression have become popular as CoDa analysis methods. However, fitting this kind of multivariate models presents challenges, especially when structured random effects are included in the model, such as temporal or spatial effects. To overcome these challenges, we propose the logistic-normal Dirichlet Model (LNDM). We seamlessly incorporate this approach into the R-INLA package, facilitating model fitting and model prediction within the framework of Latent Gaussian Models. Moreover, we explore metrics like Deviance Information Criteria, Watanabe Akaike information criterion, and cross-validation measure conditional predictive ordinate for model selection in R-INLA for CoDa. Illustrating LNDM through two simulated examples and with an ecological case study on Arabidopsis thaliana in the Iberian Peninsula, we underscore its potential as an effective tool for managing CoDa and large CoDa databases.</div></p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Tipo</div>
+          <div class="col-12 col-md-9">
+            <a href="/es/publication/#2">
+              Artículo de revista
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publicación</div>
+          <div class="col-12 col-md-9"><em>Statistics and Computing</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/es/tag/coda/">CoDa</a>
+  
+  <a class="badge badge-light" href="/es/tag/dirichlet/">Dirichlet</a>
+  
+  <a class="badge badge-light" href="/es/tag/inla/">INLA</a>
+  
+  <a class="badge badge-light" href="/es/tag/spatial/">Spatial</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fximo1990.github.io%2Fes%2Fpublication%2F22.martinez-minaya_and_rue_2024%2F&amp;text=A&#43;flexible&#43;Bayesian&#43;tool&#43;for&#43;CoDa&#43;mixed&#43;models%3A&#43;logistic-normal&#43;distribution&#43;with&#43;Dirichlet&#43;covariance" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fximo1990.github.io%2Fes%2Fpublication%2F22.martinez-minaya_and_rue_2024%2F&amp;t=A&#43;flexible&#43;Bayesian&#43;tool&#43;for&#43;CoDa&#43;mixed&#43;models%3A&#43;logistic-normal&#43;distribution&#43;with&#43;Dirichlet&#43;covariance" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=A%20flexible%20Bayesian%20tool%20for%20CoDa%20mixed%20models%3A%20logistic-normal%20distribution%20with%20Dirichlet%20covariance&amp;body=https%3A%2F%2Fximo1990.github.io%2Fes%2Fpublication%2F22.martinez-minaya_and_rue_2024%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fximo1990.github.io%2Fes%2Fpublication%2F22.martinez-minaya_and_rue_2024%2F&amp;title=A&#43;flexible&#43;Bayesian&#43;tool&#43;for&#43;CoDa&#43;mixed&#43;models%3A&#43;logistic-normal&#43;distribution&#43;with&#43;Dirichlet&#43;covariance" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=A&#43;flexible&#43;Bayesian&#43;tool&#43;for&#43;CoDa&#43;mixed&#43;models%3A&#43;logistic-normal&#43;distribution&#43;with&#43;Dirichlet&#43;covariance%20https%3A%2F%2Fximo1990.github.io%2Fes%2Fpublication%2F22.martinez-minaya_and_rue_2024%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fximo1990.github.io%2Fes%2Fpublication%2F22.martinez-minaya_and_rue_2024%2F&amp;title=A&#43;flexible&#43;Bayesian&#43;tool&#43;for&#43;CoDa&#43;mixed&#43;models%3A&#43;logistic-normal&#43;distribution&#43;with&#43;Dirichlet&#43;covariance" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://ximo1990.github.io"><img class="avatar mr-3 avatar-circle" src="/es/authors/admin/avatar_hu80cf6bf2ecf299e0ad0609adf7267dd5_299037_270x270_fill_q75_lanczos_center.jpg" alt="Joaquín Martínez-Minaya"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://ximo1990.github.io">Joaquín Martínez-Minaya</a></h5>
+      <h6 class="card-subtitle">Assistant Professor in Statistics and Optimization</h6>
+      <p class="card-text">My research interests include Spatio-temporal Bayesian models using INLA and Stan, and Compositional Data methods</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:jmarmin@eio.upv.es" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-1016-8734" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Joaquin-Martinezminaya" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.es/citations?user=-tvR0B4AAAAJ&amp;hl=es" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jmartinez-minaya" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/JoaquinM_Minaya" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/joaqu%C3%ADn-mart%C3%ADnez-minaya-7a803171/?originalSubdomain=es" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+      
+      
+      
+      
+      
+
+  <p class="powered-by">
+    Made with <a href="https://github.com/lzumeta/lzumeta_wo" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown"target="_blank" rel="noopener">blogdown</a> package and the open source <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> website builder for <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>, based on <a href="https://github.com/wowchemy/starter-hugo-academic" target="_blank" rel="noopener">Academic Theme</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+  
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/es/js/wowchemy.min.826e88e22dac04917c4078d3bcda09a6.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

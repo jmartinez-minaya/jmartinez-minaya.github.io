@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R packages | Joaquín Martínez-Minaya</title>
+    <link>https://ximo1990.github.io/es/tag/r-packages/</link>
+      <atom:link href="https://ximo1990.github.io/es/tag/r-packages/index.xml" rel="self" type="application/rss+xml" />
+    <description>R packages</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Tue, 20 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>R packages</title>
+      <link>https://ximo1990.github.io/es/tag/r-packages/</link>
+    </image>
+    
+    <item>
+      <title>injurytools</title>
+      <link>https://ximo1990.github.io/es/obsoleto/project/injurytools/</link>
+      <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/es/obsoleto/project/injurytools/</guid>
+      <description>&lt;p&gt;&lt;code&gt;injurytools&lt;/code&gt; is an &lt;strong&gt;R&lt;/strong&gt; package aimed at Sports Medicine: it facilitates the data analysis workflow by providing convenience functions and handy tools for sports injury data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;More about the usage, functionalities and documentation: &lt;a href=&#34;https://lzumeta.github.io/injurytools/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lzumeta.github.io/injurytools/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The source code: &lt;a href=&#34;https://github.com/lzumeta/injurytools&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/lzumeta/injurytools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks | Joaquín Martínez-Minaya</title>
+    <link>https://ximo1990.github.io/en/event/</link>
+      <atom:link href="https://ximo1990.github.io/en/event/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Talks</title>
+      <link>https://ximo1990.github.io/en/event/</link>
+    </image>
+    
+    <item>
+      <title>Flexible modelling of time-varying training exposures on the risk of recurrent injuries in football</title>
+      <link>https://ximo1990.github.io/en/talk/flexible-modelling-of-time-varying-training/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/flexible-modelling-of-time-varying-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How do past training exposures affect injury risk in football?</title>
+      <link>https://ximo1990.github.io/en/talk/how-do-past-training/</link>
+      <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/how-do-past-training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimating the risk of time-loss injuries in football players through recurrent time-to-event methods</title>
+      <link>https://ximo1990.github.io/en/talk/estimating-the-risk-of-time-loss/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/estimating-the-risk-of-time-loss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>injurytools: a toolkit for sports injury data analysis</title>
+      <link>https://ximo1990.github.io/en/talk/injurytools/</link>
+      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/injurytools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling the recurrence of injuries in football players using piece-wise exponential additive mixed models</title>
+      <link>https://ximo1990.github.io/en/talk/modelling-the-recurrence/</link>
+      <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/modelling-the-recurrence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling and prediction in time-to-event sports injury data: a penalized Cox regression approach</title>
+      <link>https://ximo1990.github.io/en/talk/modelling-and-prediction/</link>
+      <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/modelling-and-prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimation of injury patterns according to maturity status and timing in an elite football academy based on zero-inflated models</title>
+      <link>https://ximo1990.github.io/en/talk/estimation-of-injury-patterns/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/estimation-of-injury-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flexible time-to-event modelling approaches for recurrent football injury data</title>
+      <link>https://ximo1990.github.io/en/talk/flexible-time-to-event/</link>
+      <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/flexible-time-to-event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical modelling for time-to-event sports injury data: assessing biomechanical risk factors</title>
+      <link>https://ximo1990.github.io/en/talk/statistical-modelling-for-time-to-event/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/statistical-modelling-for-time-to-event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical modelling in sports injury prevention</title>
+      <link>https://ximo1990.github.io/en/talk/statistical-modelling-in-sports-injury/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/statistical-modelling-in-sports-injury/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A comparison of variable selection methods in high-dimensional survival analysis: an application to professional sports injuries</title>
+      <link>https://ximo1990.github.io/en/talk/a-comparison-of-variable-selection/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/a-comparison-of-variable-selection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survival analysis in professional sports injuries with multivariate regression trees</title>
+      <link>https://ximo1990.github.io/en/talk/survival-analysis-in-professional-sports-injuries/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/survival-analysis-in-professional-sports-injuries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A multi-state model for the prognosis of non-mild acute pancreatitis</title>
+      <link>https://ximo1990.github.io/en/talk/a-multi-state-model/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/a-multi-state-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A multi-state model for the prognosis of non-mild acute pancreatitis</title>
+      <link>https://ximo1990.github.io/en/talk/a-multi-state-model-for-the-prognosis-acute-pancreatitis/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/talk/a-multi-state-model-for-the-prognosis-acute-pancreatitis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

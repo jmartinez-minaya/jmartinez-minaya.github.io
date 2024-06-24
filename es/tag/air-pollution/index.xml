@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>air pollution | Joaquín Martínez-Minaya</title>
+    <link>https://ximo1990.github.io/es/tag/air-pollution/</link>
+      <atom:link href="https://ximo1990.github.io/es/tag/air-pollution/index.xml" rel="self" type="application/rss+xml" />
+    <description>air pollution</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>air pollution</title>
+      <link>https://ximo1990.github.io/es/tag/air-pollution/</link>
+    </image>
+    
+    <item>
+      <title>Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia</title>
+      <link>https://ximo1990.github.io/es/publication/19.bronte-et-al.-2023/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/es/publication/19.bronte-et-al.-2023/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1903 @@
+<!DOCTYPE html><html lang="es-es" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Joaquín Martínez-Minaya" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Statistical Machine Learning in Environmental Health leverages algorithms to understand the impacts of environmental factors like air pollution on public health outcomes, particularly during the **COVID-19 pandemic**." />
+
+  
+    <link rel="alternate" hreflang="en" href="https://ximo1990.github.io/en/project/3.statistical-learning-in-environmental-health/" />
+  
+  <link rel="alternate" hreflang="es-es" href="https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#003f5c" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6781ddd72703e5e1bbf862d40a743a07.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z04H7RM37H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-Z04H7RM37H', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/es/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@wowchemy" />
+    <meta property="twitter:creator" content="@wowchemy" />
+  
+  <meta property="og:site_name" content="Joaquín Martínez-Minaya" />
+  <meta property="og:url" content="https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/" />
+  <meta property="og:title" content="Statistical Machine Learning in Environmental Health | Joaquín Martínez-Minaya" />
+  <meta property="og:description" content="Statistical Machine Learning in Environmental Health leverages algorithms to understand the impacts of environmental factors like air pollution on public health outcomes, particularly during the **COVID-19 pandemic**." /><meta property="og:image" content="https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/featured.jpg" />
+    <meta property="twitter:image" content="https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/featured.jpg" /><meta property="og:locale" content="es-es" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-03-20T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-03-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/"
+  },
+  "headline": "Statistical Machine Learning in Environmental Health",
+  
+  "image": [
+    "https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/featured.jpg"
+  ],
+  
+  "datePublished": "2020-03-20T00:00:00Z",
+  "dateModified": "2020-03-20T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Joaquín Martínez-Minaya"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Joaquín Martínez-Minaya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Statistical Machine Learning in Environmental Health leverages algorithms to understand the impacts of environmental factors like air pollution on public health outcomes, particularly during the **COVID-19 pandemic**."
+}
+</script>
+
+  
+
+  
+
+  
+
+
+  <title>Statistical Machine Learning in Environmental Health | Joaquín Martínez-Minaya</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0e3a6f9682778740899e2f7ec51cc4a0" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.1ee5462d74c6c0de1f8881b384ecc58d.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Buscar</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Cerrar"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Buscar..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Buscar...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/es/">Joaquín Martínez-Minaya</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Barra de navegación">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/#about"><span>Sobre mí</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/publication/"><span>Investigación</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/teaching/"><span>Docencia</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/es/supplementary/"><span>Material suplementario</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        
+        
+        
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#"  data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Idiomas">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i><span class="d-none d-lg-inline">Español</span></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>Español</span>
+            </div>
+            
+            <a class="dropdown-item" href="https://ximo1990.github.io/en/project/3.statistical-learning-in-environmental-health/">
+              <span>English</span>
+            </a>
+            
+          </div>
+        </li>
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Statistical Machine Learning in Environmental Health</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    mar. 20, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 411px;">
+  <div style="position: relative">
+    <img src="/es/project/3.statistical-learning-in-environmental-health/featured_huf21843ff47e854bc1475709807c18541_727011_720x2500_fit_q75_h2_lanczos.webp" width="720" height="411" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <div style='text-align: justify;'>
+The project employs Statistics and Machine learning techniques to analyze the influence of environmental factors, such as air pollution, on public health. Studies reveal strong correlations between exposure to pollutants and the severity of health outcomes, particularly during the COVID-19 pandemic. Research findings indicate that socio-economic and environmental determinants critically affect disease spread and severity. By integrating various data sources, the project aims to enhance predictive models for better health risk assessments. This multidisciplinary approach underscores the importance of addressing environmental health challenges through advanced statistical learning methodologies.</div>
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/es/tag/bsl-hee/">BSL-HEE</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fximo1990.github.io%2Fes%2Fproject%2F3.statistical-learning-in-environmental-health%2F&amp;text=Statistical&#43;Machine&#43;Learning&#43;in&#43;Environmental&#43;Health" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fximo1990.github.io%2Fes%2Fproject%2F3.statistical-learning-in-environmental-health%2F&amp;t=Statistical&#43;Machine&#43;Learning&#43;in&#43;Environmental&#43;Health" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Statistical%20Machine%20Learning%20in%20Environmental%20Health&amp;body=https%3A%2F%2Fximo1990.github.io%2Fes%2Fproject%2F3.statistical-learning-in-environmental-health%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fximo1990.github.io%2Fes%2Fproject%2F3.statistical-learning-in-environmental-health%2F&amp;title=Statistical&#43;Machine&#43;Learning&#43;in&#43;Environmental&#43;Health" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Statistical&#43;Machine&#43;Learning&#43;in&#43;Environmental&#43;Health%20https%3A%2F%2Fximo1990.github.io%2Fes%2Fproject%2F3.statistical-learning-in-environmental-health%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fximo1990.github.io%2Fes%2Fproject%2F3.statistical-learning-in-environmental-health%2F&amp;title=Statistical&#43;Machine&#43;Learning&#43;in&#43;Environmental&#43;Health" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://ximo1990.github.io"><img class="avatar mr-3 avatar-circle" src="/es/authors/admin/avatar_hu80cf6bf2ecf299e0ad0609adf7267dd5_299037_270x270_fill_q75_lanczos_center.jpg" alt="Joaquín Martínez-Minaya"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://ximo1990.github.io">Joaquín Martínez-Minaya</a></h5>
+      <h6 class="card-subtitle">Assistant Professor in Statistics and Optimization</h6>
+      <p class="card-text">My research interests include Spatio-temporal Bayesian models using INLA and Stan, and Compositional Data methods</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:jmarmin@eio.upv.es" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-1016-8734" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Joaquin-Martinezminaya" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.es/citations?user=-tvR0B4AAAAJ&amp;hl=es" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jmartinez-minaya" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/JoaquinM_Minaya" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/joaqu%C3%ADn-mart%C3%ADnez-minaya-7a803171/?originalSubdomain=es" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+        <h2>Publicaciones</h2>
+        
+          
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/21.garcia-garcia_et_al_2024/" >Cost-sensitive ordinal classification methods to predict SARS-CoV-2 pneumonia severity</a>
+    </div>
+
+    
+    <a href="/es/publication/21.garcia-garcia_et_al_2024/"  class="summary-link">
+      <div class="article-style">
+        <div style='text-align: justify;'>Objective: To study the suitability of cost-sensitive ordinal artificial intelligence-machine learning (AI-ML) strategies in the …</div>
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Fernando García-García</span>, <span >
+      Dae-Jin Lee</span>, <span >
+      Pedro Pablo España Yandiola</span>, <span >
+      Isabel Urrutia Landa</span>, <span class="author-highlighted">
+      Joaquín Martínez-Minaya</span>, <span >
+      Miren Hayet-Otero</span>, <span >
+      Mónica Nieves Ermecheo</span>, <span >
+      José María Quintana</span>, <span >
+      Rosario Menéndez</span>, <span >
+      Antoni Torres</span>, <span >
+      Rafael Zalacain Jorge</span>, <span >
+      COVID-19 &amp; Air Pollution Working Group</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/10428003?casa_token=pXXTJBAUG_IAAAAA:UW17l3RxzsrD0ez1_FtJQX5-YRBk-8W-7yA2VawcMXOJoy2nlx8eHc5XD_xDNQsXsx_eEr9o" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/21.garcia-garcia_et_al_2024/cite.bib">
+  Citas
+</a>
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/JBHI.2024.3363765" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/21.garcia-garcia_et_al_2024/" >
+      <img src="/es/publication/21.garcia-garcia_et_al_2024/featured_hu42f44fc156cd99f4295703c4d945c210_159318_150x0_resize_q75_h2_lanczos.webp" height="108" width="150"
+           alt="Cost-sensitive ordinal classification methods to predict SARS-CoV-2 pneumonia severity" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+        
+          
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/19.bronte-et-al.-2023/" >Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia</a>
+    </div>
+
+    
+    <a href="/es/publication/19.bronte-et-al.-2023/"  class="summary-link">
+      <div class="article-style">
+        <div style='text-align: justify;'>This study examines the relationship between outdoor air pollution exposure and the severity and mortality of COVID-19 pneumonia. The …</div>
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      O. Bronte</span>, <span >
+      F. García-García</span>, <span >
+      D.-J. Lee</span>, <span >
+      I. Urrutia</span>, <span >
+      A. Uranga</span>, <span >
+      M. Nieves</span>, <span class="author-highlighted">
+      Joaquín Martínez-Minaya</span>, <span >
+      J.M. Quintana</span>, <span >
+      I. Arostegui</span>, <span >
+      R. Zalacain</span>, <span >
+      L.A. Ruiz-Iturriaga</span>, <span >
+      L. Serrano</span>, <span >
+      R. Menéndez</span>, <span >
+      R. Méndez</span>, <span >
+      A. Torres</span>, <span >
+      C. Cilloniz</span>, <span >
+      P.P. España</span>, <span >
+      COVID-19 &amp; Air Pollution Working Group</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.sciencedirect.com/science/article/pii/S0048969723035003?via%3Dihub" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/19.bronte-et-al.-2023/cite.bib">
+  Citas
+</a>
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1016/j.scitotenv.2023.164877" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/19.bronte-et-al.-2023/" >
+      <img src="/es/publication/19.bronte-et-al.-2023/featured_hu4aaeef145458a618b5a8587772916cc4_112158_150x0_resize_q75_h2_lanczos.webp" height="60" width="150"
+           alt="Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+        
+          
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/18.hayet-otero_et_al_2023/" >Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques</a>
+    </div>
+
+    
+    <a href="/es/publication/18.hayet-otero_et_al_2023/"  class="summary-link">
+      <div class="article-style">
+        <div style='text-align: justify;'> With the COVID-19 pandemic having caused unprecedented numbers of infections and deaths, large research efforts have been undertaken …</div>
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Miren Hayet-Otero</span>, <span >
+      Fernando García-García</span>, <span >
+      Dae-Jin Lee</span>, <span class="author-highlighted">
+      Joaquín Martínez-Minaya</span>, <span >
+      Pedro Pablo España Yandiola</span>, <span >
+      Isabel Urrutia Landa</span>, <span >
+      Mónica Nieves Ermecheo</span>, <span >
+      José María Quintana</span>, <span >
+      Rosario Menéndez</span>, <span >
+      Antoni Torres</span>, <span >
+      Rafael Zalacain Jorge</span>, <span >
+      Inmaculada Arostegui</span>, <span >
+      COVID-19 &amp; Air Pollution Working Group</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0284150" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/18.hayet-otero_et_al_2023/cite.bib">
+  Citas
+</a>
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1371/journal.pone.0284150" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/18.hayet-otero_et_al_2023/" >
+      <img src="/es/publication/18.hayet-otero_et_al_2023/featured_hu510a950f55d029abcd6bbbfcbfd91709_142291_150x0_resize_q75_h2_lanczos.webp" height="119" width="150"
+           alt="Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+        
+          
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/15.triguero-mas_et_al_2022/" >Exploring green gentrification in 28 global North cities: the role of urban parks and other types of greenspaces</a>
+    </div>
+
+    
+    <a href="/es/publication/15.triguero-mas_et_al_2022/"  class="summary-link">
+      <div class="article-style">
+        <div style='text-align: justify;'> Although cities globally are increasingly mobilizing re-naturing projects to address diverse urban socio-environmental and health …</div>
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Margarita Triguero-Mas</span>, <span >
+      Isabelle Anguelovski</span>, <span >
+      James J T Connolly</span>, <span >
+      Nick Martin</span>, <span >
+      Austin Matheney</span>, <span >
+      Helen V S Cole</span>, <span >
+      Carmen Pérez del Pulgar</span>, <span >
+      Melissa Garcia-Lamarca</span>, <span >
+      Galia Shokry</span>, <span >
+      Lucía Argüelles</span>, <span >
+      David Conesa</span>, <span >
+      Elsa Gallez</span>, <span >
+      Blanca Sarzo</span>, <span >
+      Miguel Angel Beltrán</span>, <span >
+      Jesúa López Máñez</span>, <span class="author-highlighted">
+      Joaquín Martínez-Minaya</span>, <span >
+      Emilia Oscilowicz</span>, <span >
+      Mariana C Arcaya</span>, <span >
+      Francesc Baró</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://iopscience.iop.org/article/10.1088/1748-9326/ac9325/pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/15.triguero-mas_et_al_2022/cite.bib">
+  Citas
+</a>
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1088/1748-9326/ac9325" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/15.triguero-mas_et_al_2022/" >
+      <img src="/es/publication/15.triguero-mas_et_al_2022/featured_hucd83d059e772b88873ce773ff74ecdc9_114938_150x0_resize_q75_h2_lanczos.webp" height="137" width="150"
+           alt="Exploring green gentrification in 28 global North cities: the role of urban parks and other types of greenspaces" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+        
+          
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/es/publication/13.anguelovski_et_al_2022/" >Green gentrification in European and North American cities</a>
+    </div>
+
+    
+    <a href="/es/publication/13.anguelovski_et_al_2022/"  class="summary-link">
+      <div class="article-style">
+        <div style='text-align: justify;'>Although urban greening is universally recognized as an essential part of sustainable and climate-responsive cities, a growing …</div>
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Isabelle Anguelovski</span>, <span >
+      James J. T. Connolly</span>, <span >
+      Helen Cole</span>, <span >
+      Melissa Garcia-Lamarca</span>, <span >
+      Margarita Triguero-Mas</span>, <span >
+      Francesc Baró</span>, <span >
+      Nicholas Martin</span>, <span >
+      David Conesa</span>, <span >
+      Galia Shokry</span>, <span >
+      Carmen Pérez del Pulgar</span>, <span >
+      Lucia Argüelles Ramos</span>, <span >
+      Austin Matheney</span>, <span >
+      Elsa Gallez</span>, <span >
+      Emilia Oscilowicz</span>, <span >
+      Jesúa López Máñez</span>, <span >
+      Blanca Sarzo</span>, <span >
+      Miguel Angel Beltrán</span>, <span class="author-highlighted">
+      Joaquín Martínez-Minaya</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.nature.com/articles/s41467-022-31572-1" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/es/publication/13.anguelovski_et_al_2022/cite.bib">
+  Citas
+</a>
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1038/s41467-022-31572-1" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/es/publication/13.anguelovski_et_al_2022/" >
+      <img src="/es/publication/13.anguelovski_et_al_2022/featured_hu257e9c58222c28634517a384f7bf6190_275193_150x0_resize_q75_h2_lanczos.webp" height="130" width="150"
+           alt="Green gentrification in European and North American cities" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+        
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+
+
+
+      
+      
+      
+      
+      
+
+  <p class="powered-by">
+    Made with <a href="https://github.com/lzumeta/lzumeta_wo" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown"target="_blank" rel="noopener">blogdown</a> package and the open source <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> website builder for <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>, based on <a href="https://github.com/wowchemy/starter-hugo-academic" target="_blank" rel="noopener">Academic Theme</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+  
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/es/js/wowchemy.min.826e88e22dac04917c4078d3bcda09a6.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copiar
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Descargar
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

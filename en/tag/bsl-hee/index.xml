@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BSL-HEE | Joaquín Martínez-Minaya</title>
+    <link>https://ximo1990.github.io/en/tag/bsl-hee/</link>
+      <atom:link href="https://ximo1990.github.io/en/tag/bsl-hee/index.xml" rel="self" type="application/rss+xml" />
+    <description>BSL-HEE</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>BSL-HEE</title>
+      <link>https://ximo1990.github.io/en/tag/bsl-hee/</link>
+    </image>
+    
+    <item>
+      <title>Bayesian Learning for Microbioma</title>
+      <link>https://ximo1990.github.io/en/project/6.bayesian-learning-for-microbioma/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/project/6.bayesian-learning-for-microbioma/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+In this project, we utilize Bayesian Dirichlet models to analyze the impact of stress on vaginal microbiome composition. By examining cortisol levels in hair and blood as proxies for stress, the study explores how mental health disturbances influence microbial communities. The research involves genetic analysis of microbiota from 259 middle-aged women, identifying key bacterial profiles linked to vaginal health. Findings suggest that variations in Lactobacillus spp. and other genera may indicate dysbiosis related to stress. This project aims to enhance understanding of the microbiome&#39;s role in health and disease, guiding future therapeutic strategies.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Statistical Machine Learning in Environmental Health</title>
+      <link>https://ximo1990.github.io/en/project/3.statistical-learning-in-environmental-health/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/en/project/3.statistical-learning-in-environmental-health/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project employs Statistics and Machine learning techniques to analyze the influence of environmental factors, such as air pollution, on public health. Studies reveal strong correlations between exposure to pollutants and the severity of health outcomes, particularly during the COVID-19 pandemic. Research findings indicate that socio-economic and environmental determinants critically affect disease spread and severity. By integrating various data sources, the project aims to enhance predictive models for better health risk assessments. This multidisciplinary approach underscores the importance of addressing environmental health challenges through advanced statistical learning methodologies.&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ordinal classification | Joaquín Martínez-Minaya</title>
+    <link>https://ximo1990.github.io/es/tag/ordinal-classification/</link>
+      <atom:link href="https://ximo1990.github.io/es/tag/ordinal-classification/index.xml" rel="self" type="application/rss+xml" />
+    <description>ordinal classification</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>ordinal classification</title>
+      <link>https://ximo1990.github.io/es/tag/ordinal-classification/</link>
+    </image>
+    
+    <item>
+      <title>Cost-sensitive ordinal classification methods to predict SARS-CoV-2 pneumonia severity</title>
+      <link>https://ximo1990.github.io/es/publication/21.garcia-garcia_et_al_2024/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://ximo1990.github.io/es/publication/21.garcia-garcia_et_al_2024/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
