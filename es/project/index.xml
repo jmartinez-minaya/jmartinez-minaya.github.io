@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Joaquín Martínez-Minaya</title>
-    <link>https://ximo1990.github.io/es/project/</link>
-      <atom:link href="https://ximo1990.github.io/es/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jmartinez-minaya.github.io/es/project/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/es/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>https://ximo1990.github.io/es/project/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/</link>
     </image>
     
     <item>
       <title>Bayesian Learning for Microbioma</title>
-      <link>https://ximo1990.github.io/es/project/6.bayesian-learning-for-microbioma/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/6.bayesian-learning-for-microbioma/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/6.bayesian-learning-for-microbioma/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/6.bayesian-learning-for-microbioma/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 In this project, we utilize Bayesian Dirichlet models to analyze the impact of stress on vaginal microbiome composition. By examining cortisol levels in hair and blood as proxies for stress, the study explores how mental health disturbances influence microbial communities. The research involves genetic analysis of microbiota from 259 middle-aged women, identifying key bacterial profiles linked to vaginal health. Findings suggest that variations in Lactobacillus spp. and other genera may indicate dysbiosis related to stress. This project aims to enhance understanding of the microbiome&#39;s role in health and disease, guiding future therapeutic strategies.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Statistical Machine Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/3.statistical-learning-in-environmental-health/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/3.statistical-learning-in-environmental-health/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 The project employs Statistics and Machine learning techniques to analyze the influence of environmental factors, such as air pollution, on public health. Studies reveal strong correlations between exposure to pollutants and the severity of health outcomes, particularly during the COVID-19 pandemic. Research findings indicate that socio-economic and environmental determinants critically affect disease spread and severity. By integrating various data sources, the project aims to enhance predictive models for better health risk assessments. This multidisciplinary approach underscores the importance of addressing environmental health challenges through advanced statistical learning methodologies.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Methods for Compositional Data using INLA</title>
-      <link>https://ximo1990.github.io/es/project/4.methods-for-compositional-data/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/4.methods-for-compositional-data/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/4.methods-for-compositional-data/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/4.methods-for-compositional-data/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 This project centers on advancing Bayesian hierarchical models to analyze compositional datasets, which are prevalent in ecological and environmental studies. The research introduces novel methodologies, such as Dirichlet regression and logistic-normal models, to handle the complexities of compositional data. These methods facilitate better inference and prediction capabilities, addressing challenges like spatial and temporal correlations. The project&#39;s applications span across diverse areas, including species distribution modeling and air pollution studies, contributing to enhanced decision-making and policy development in environmental science.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Bayesian Hierarchical models in Marine Ecology</title>
-      <link>https://ximo1990.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</link>
       <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 The &#34;Hierarchical Bayesian Models in Marine Ecology&#34; project aims to enhance the understanding of marine species distribution by developing advanced Bayesian models. By incorporating interactions among species such as dolphins, fish, and seabirds, these models can provide more accurate predictions of species abundance and distribution. The project utilizes real-world data from various marine surveys, applying statistical techniques to analyze the spatial and temporal patterns of marine life. This approach helps in identifying critical factors affecting marine ecosystems and aids in the conservation and management of marine biodiversity.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Spatial Bayesian Learning in Ecology and Climate Change</title>
-      <link>https://ximo1990.github.io/es/project/2.bayesian-learning-for-ecology/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/2.bayesian-learning-for-ecology/</link>
       <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/2.bayesian-learning-for-ecology/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/2.bayesian-learning-for-ecology/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 This project focuses on the application of Bayesian learning techniques to analyze and interpret Ecological data, aiming to improve our understanding of ecological processes, biodiversity patterns, and the impacts of climate change. By using hierarchical models and spatial analysis, the project addresses key ecological questions such as species distribution, genetic diversity, and environmental impacts. The integration of Bayesian methods provides robust statistical frameworks to handle uncertainty and variability inherent in ecological data. This approach enhances predictive modeling and supports decision-making in conservation and environmental management.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Mixed Models for Plant Epidemiology</title>
-      <link>https://ximo1990.github.io/es/project/1.mixed-models-for-plant-epidemiology/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/1.mixed-models-for-plant-epidemiology/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/1.mixed-models-for-plant-epidemiology/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/1.mixed-models-for-plant-epidemiology/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 The project **Mixed Models for Plant Epidemiology** focuses on the use of advanced statistical models to understand and predict the spread of plant diseases. By utilizing Bayesian Mixed Models, the project integrates spatial and temporal data to analyze distribution patterns of diseases such as **Citrus Black Spot**, **Circular Leaf Spot**, and *Xylella fastidiosa*. These models help identify climatic and geographic factors influencing disease propagation, aiding in the design of effective control and mitigation strategies. The insights gained from this project are crucial for developing sustainable agricultural practices and protecting plant health. &lt;/div&gt;
 </description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BC-Methods | Joaquín Martínez-Minaya</title>
-    <link>https://ximo1990.github.io/en/tag/bc-methods/</link>
-      <atom:link href="https://ximo1990.github.io/en/tag/bc-methods/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jmartinez-minaya.github.io/en/tag/bc-methods/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/en/tag/bc-methods/index.xml" rel="self" type="application/rss+xml" />
     <description>BC-Methods</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>BC-Methods</title>
-      <link>https://ximo1990.github.io/en/tag/bc-methods/</link>
+      <link>https://jmartinez-minaya.github.io/en/tag/bc-methods/</link>
     </image>
     
     <item>
       <title>Methods for Compositional Data using INLA</title>
-      <link>https://ximo1990.github.io/en/project/4.methods-for-compositional-data/</link>
+      <link>https://jmartinez-minaya.github.io/en/project/4.methods-for-compositional-data/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/en/project/4.methods-for-compositional-data/</guid>
+      <guid>https://jmartinez-minaya.github.io/en/project/4.methods-for-compositional-data/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 This project centers on advancing Bayesian hierarchical models to analyze compositional datasets, which are prevalent in ecological and environmental studies. The research introduces novel methodologies, such as Dirichlet regression and logistic-normal models, to handle the complexities of compositional data. These methods facilitate better inference and prediction capabilities, addressing challenges like spatial and temporal correlations. The project&#39;s applications span across diverse areas, including species distribution modeling and air pollution studies, contributing to enhanced decision-making and policy development in environmental science.&lt;/div&gt;</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spatial statistics | Joaquín Martínez-Minaya</title>
-    <link>https://ximo1990.github.io/es/tag/spatial-statistics/</link>
-      <atom:link href="https://ximo1990.github.io/es/tag/spatial-statistics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jmartinez-minaya.github.io/es/tag/spatial-statistics/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/es/tag/spatial-statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Spatial statistics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Spatial statistics</title>
-      <link>https://ximo1990.github.io/es/tag/spatial-statistics/</link>
+      <link>https://jmartinez-minaya.github.io/es/tag/spatial-statistics/</link>
     </image>
     
     <item>
       <title>Automatic cross-validation in structured models: Is it time to leave out leave-one-out?</title>
-      <link>https://ximo1990.github.io/es/publication/23.adin_et_al_2024/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/23.adin_et_al_2024/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/23.adin_et_al_2024/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/23.adin_et_al_2024/</guid>
       <description></description>
     </item>
     

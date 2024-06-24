@@ -2,117 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joaquín Martínez-Minaya</title>
-    <link>https://ximo1990.github.io/es/</link>
-      <atom:link href="https://ximo1990.github.io/es/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jmartinez-minaya.github.io/es/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/es/index.xml" rel="self" type="application/rss+xml" />
     <description>Joaquín Martínez-Minaya</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Tue, 18 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Joaquín Martínez-Minaya</title>
-      <link>https://ximo1990.github.io/es/</link>
+      <link>https://jmartinez-minaya.github.io/es/</link>
     </image>
     
     <item>
       <title>Automatic cross-validation in structured models: Is it time to leave out leave-one-out?</title>
-      <link>https://ximo1990.github.io/es/publication/23.adin_et_al_2024/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/23.adin_et_al_2024/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/23.adin_et_al_2024/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/23.adin_et_al_2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance</title>
-      <link>https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/22.martinez-minaya_and_rue_2024/</link>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/22.martinez-minaya_and_rue_2024/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/22.martinez-minaya_and_rue_2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A novel statistical approach to deal with spatial bias in maturity ogive estimation</title>
-      <link>https://ximo1990.github.io/es/publication/20.cousido_et_al_2023/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/20.cousido_et_al_2023/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/20.cousido_et_al_2023/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/20.cousido_et_al_2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cost-sensitive ordinal classification methods to predict SARS-CoV-2 pneumonia severity</title>
-      <link>https://ximo1990.github.io/es/publication/21.garcia-garcia_et_al_2024/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/21.garcia-garcia_et_al_2024/</link>
       <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/21.garcia-garcia_et_al_2024/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/21.garcia-garcia_et_al_2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flexible modelling of time-varying training exposures on the risk of recurrent injuries in football</title>
-      <link>https://ximo1990.github.io/es/talk/flexible-modelling-of-time-varying-training/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/flexible-modelling-of-time-varying-training/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/flexible-modelling-of-time-varying-training/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/flexible-modelling-of-time-varying-training/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How do past training exposures affect injury risk in football?</title>
-      <link>https://ximo1990.github.io/es/talk/how-do-past-training/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/how-do-past-training/</link>
       <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/how-do-past-training/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/how-do-past-training/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia</title>
-      <link>https://ximo1990.github.io/es/publication/19.bronte-et-al.-2023/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/19.bronte-et-al.-2023/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/19.bronte-et-al.-2023/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/19.bronte-et-al.-2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques</title>
-      <link>https://ximo1990.github.io/es/publication/18.hayet-otero_et_al_2023/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/18.hayet-otero_et_al_2023/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/18.hayet-otero_et_al_2023/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/18.hayet-otero_et_al_2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Integrated Nested Laplace Approximation for Fitting Dirichlet Regression Models</title>
-      <link>https://ximo1990.github.io/es/publication/17.martinez-minaya_et_al_2023/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/17.martinez-minaya_et_al_2023/</link>
       <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/17.martinez-minaya_et_al_2023/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/17.martinez-minaya_et_al_2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling seabirds biodiversity through Bayesian Spatial Beta regression models: A proxy to inform marine protected areas in the Mediterranean Sea</title>
-      <link>https://ximo1990.github.io/es/publication/16.sarzo_et_al_2023/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/16.sarzo_et_al_2023/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/16.sarzo_et_al_2023/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/16.sarzo_et_al_2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimating the risk of time-loss injuries in football players through recurrent time-to-event methods</title>
-      <link>https://ximo1990.github.io/es/talk/estimating-the-risk-of-time-loss/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/estimating-the-risk-of-time-loss/</link>
       <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/estimating-the-risk-of-time-loss/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/estimating-the-risk-of-time-loss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploring green gentrification in 28 global North cities: the role of urban parks and other types of greenspaces</title>
-      <link>https://ximo1990.github.io/es/publication/15.triguero-mas_et_al_2022/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/15.triguero-mas_et_al_2022/</link>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/15.triguero-mas_et_al_2022/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/15.triguero-mas_et_al_2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>injurytools</title>
-      <link>https://ximo1990.github.io/es/obsoleto/project/injurytools/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/project/injurytools/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/project/injurytools/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/project/injurytools/</guid>
       <description>&lt;p&gt;&lt;code&gt;injurytools&lt;/code&gt; is an &lt;strong&gt;R&lt;/strong&gt; package aimed at Sports Medicine: it facilitates the data analysis workflow by providing convenience functions and handy tools for sports injury data.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;More about the usage, functionalities and documentation: &lt;a href=&#34;https://lzumeta.github.io/injurytools/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://lzumeta.github.io/injurytools/&lt;/a&gt;&lt;/li&gt;
@@ -123,9 +123,9 @@
     
     <item>
       <title>Statistical Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/projects2/5.bayesian-learning-for-microbioma/</link>
+      <link>https://jmartinez-minaya.github.io/es/projects2/5.bayesian-learning-for-microbioma/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/projects2/5.bayesian-learning-for-microbioma/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/projects2/5.bayesian-learning-for-microbioma/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 Write a summary
 &lt;/div&gt;</description>
@@ -133,9 +133,9 @@ Write a summary
     
     <item>
       <title>Statistical Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/projects2/6.spatial-transcriptomics/</link>
+      <link>https://jmartinez-minaya.github.io/es/projects2/6.spatial-transcriptomics/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/projects2/6.spatial-transcriptomics/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/projects2/6.spatial-transcriptomics/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 Write a summary
 &lt;/div&gt;</description>
@@ -143,9 +143,9 @@ Write a summary
     
     <item>
       <title>Statistical Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/projects2/7.machine-learning-for-sales-predictions/</link>
+      <link>https://jmartinez-minaya.github.io/es/projects2/7.machine-learning-for-sales-predictions/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/projects2/7.machine-learning-for-sales-predictions/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/projects2/7.machine-learning-for-sales-predictions/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 Write a summary
 &lt;/div&gt;</description>
@@ -153,9 +153,9 @@ Write a summary
     
     <item>
       <title>Statistical Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/projects2/8.compositional-time-series-in-market-shares/</link>
+      <link>https://jmartinez-minaya.github.io/es/projects2/8.compositional-time-series-in-market-shares/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/projects2/8.compositional-time-series-in-market-shares/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/projects2/8.compositional-time-series-in-market-shares/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 Write a summary
 &lt;/div&gt;</description>
@@ -163,9 +163,9 @@ Write a summary
     
     <item>
       <title>Statistical Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/projects2/9.multivariate-bayesian-learning-in-industry/</link>
+      <link>https://jmartinez-minaya.github.io/es/projects2/9.multivariate-bayesian-learning-in-industry/</link>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/projects2/9.multivariate-bayesian-learning-in-industry/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/projects2/9.multivariate-bayesian-learning-in-industry/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 Write a summary
 &lt;/div&gt;</description>
@@ -173,132 +173,132 @@ Write a summary
     
     <item>
       <title>injurytools: a toolkit for sports injury data analysis</title>
-      <link>https://ximo1990.github.io/es/talk/injurytools/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/injurytools/</link>
       <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/injurytools/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/injurytools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://ximo1990.github.io/es/obsoleto/projects/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/projects/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/projects/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://ximo1990.github.io/es/projects/</link>
+      <link>https://jmartinez-minaya.github.io/es/projects/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/projects/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Resume</title>
-      <link>https://ximo1990.github.io/es/resume/</link>
+      <link>https://jmartinez-minaya.github.io/es/resume/</link>
       <pubDate>Sun, 28 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/resume/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/resume/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kaixo</title>
-      <link>https://ximo1990.github.io/es/obsoleto/post/kaixo/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/post/kaixo/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/post/kaixo/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/post/kaixo/</guid>
       <description>&lt;p&gt;Kaixo!!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A mesoscale analysis of relations between fish species richness and environmental and anthropogenic pressures in the Mediterranean Sea</title>
-      <link>https://ximo1990.github.io/es/publication/14.carmezim_et_al_2022/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/14.carmezim_et_al_2022/</link>
       <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/14.carmezim_et_al_2022/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/14.carmezim_et_al_2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling the recurrence of injuries in football players using piece-wise exponential additive mixed models</title>
-      <link>https://ximo1990.github.io/es/talk/modelling-the-recurrence/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/modelling-the-recurrence/</link>
       <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/modelling-the-recurrence/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/modelling-the-recurrence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Green gentrification in European and North American cities</title>
-      <link>https://ximo1990.github.io/es/publication/13.anguelovski_et_al_2022/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/13.anguelovski_et_al_2022/</link>
       <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/13.anguelovski_et_al_2022/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/13.anguelovski_et_al_2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modelling and prediction in time-to-event sports injury data: a penalized Cox regression approach</title>
-      <link>https://ximo1990.github.io/es/talk/modelling-and-prediction/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/modelling-and-prediction/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/modelling-and-prediction/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/modelling-and-prediction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Estimation of injury patterns according to maturity status and timing in an elite football academy based on zero-inflated models</title>
-      <link>https://ximo1990.github.io/es/talk/estimation-of-injury-patterns/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/estimation-of-injury-patterns/</link>
       <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/estimation-of-injury-patterns/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/estimation-of-injury-patterns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Modeling Inoculum Availability of Plurivorosphaerella nawae in Persimmon Leaf Litter with Bayesian Beta Regression</title>
-      <link>https://ximo1990.github.io/es/publication/11.martinez-minaya_2021/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/11.martinez-minaya_2021/</link>
       <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/11.martinez-minaya_2021/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/11.martinez-minaya_2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flexible time-to-event modelling approaches for recurrent football injury data</title>
-      <link>https://ximo1990.github.io/es/talk/flexible-time-to-event/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/flexible-time-to-event/</link>
       <pubDate>Mon, 06 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/flexible-time-to-event/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/flexible-time-to-event/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Learning for Microbioma</title>
-      <link>https://ximo1990.github.io/es/project/6.bayesian-learning-for-microbioma/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/6.bayesian-learning-for-microbioma/</link>
       <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/6.bayesian-learning-for-microbioma/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/6.bayesian-learning-for-microbioma/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 In this project, we utilize Bayesian Dirichlet models to analyze the impact of stress on vaginal microbiome composition. By examining cortisol levels in hair and blood as proxies for stress, the study explores how mental health disturbances influence microbial communities. The research involves genetic analysis of microbiota from 259 middle-aged women, identifying key bacterial profiles linked to vaginal health. Findings suggest that variations in Lactobacillus spp. and other genera may indicate dysbiosis related to stress. This project aims to enhance understanding of the microbiome&#39;s role in health and disease, guiding future therapeutic strategies.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Bayesian Hierarchical Models in Plant Disease</title>
-      <link>https://ximo1990.github.io/es/obsoleto/project2/bhm-plant-disease/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/project2/bhm-plant-disease/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/project2/bhm-plant-disease/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/project2/bhm-plant-disease/</guid>
       <description>&lt;p&gt;This project shows how the use of Bayesian hierarchical models can help in the establishment of measures for plant diseases control. Applications to the citrus black spot, circular leaf spot in kakhi and Peach Powdery Mildew.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Incorporating Biotic Information in Species Distribution Models: A Coregionalized Approach</title>
-      <link>https://ximo1990.github.io/es/publication/12.barber_2020/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/12.barber_2020/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/12.barber_2020/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/12.barber_2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://ximo1990.github.io/es/obsoleto/post/getting-started/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/post/getting-started/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/post/getting-started/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
@@ -374,173 +374,173 @@ In this project, we utilize Bayesian Dirichlet models to analyze the impact of s
     
     <item>
       <title>Statistical modelling for time-to-event sports injury data: assessing biomechanical risk factors</title>
-      <link>https://ximo1990.github.io/es/talk/statistical-modelling-for-time-to-event/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/statistical-modelling-for-time-to-event/</link>
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/statistical-modelling-for-time-to-event/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/statistical-modelling-for-time-to-event/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spatial Bayesian Modeling Applied to the Surveys of Xylella fastidiosa in Alicante (Spain) and Apulia (Italy)</title>
-      <link>https://ximo1990.github.io/es/publication/10.cendoya_2020/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/10.cendoya_2020/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/10.cendoya_2020/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/10.cendoya_2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A decision support system based on degree-days to initiate fungicide spray programs for peach powdery mildew in Catalonia, Spain</title>
-      <link>https://ximo1990.github.io/es/publication/8.marimon_2020/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/8.marimon_2020/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/8.marimon_2020/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/8.marimon_2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ecological, genetic and evolutionary drivers of regional genetic differentiation in Arabidopsis thaliana</title>
-      <link>https://ximo1990.github.io/es/publication/9.castilla_2020/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/9.castilla_2020/</link>
       <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/9.castilla_2020/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/9.castilla_2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Comparison of Frequentist and Bayesian Meta-Analysis Models for Assessing the Efficacy of Decision Support Systems in Reducing Fungal Disease Incidence</title>
-      <link>https://ximo1990.github.io/es/publication/7.lazaro_2020/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/7.lazaro_2020/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/7.lazaro_2020/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/7.lazaro_2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistical Machine Learning in Environmental Health</title>
-      <link>https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/3.statistical-learning-in-environmental-health/</link>
       <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/3.statistical-learning-in-environmental-health/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/3.statistical-learning-in-environmental-health/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 The project employs Statistics and Machine learning techniques to analyze the influence of environmental factors, such as air pollution, on public health. Studies reveal strong correlations between exposure to pollutants and the severity of health outcomes, particularly during the COVID-19 pandemic. Research findings indicate that socio-economic and environmental determinants critically affect disease spread and severity. By integrating various data sources, the project aims to enhance predictive models for better health risk assessments. This multidisciplinary approach underscores the importance of addressing environmental health challenges through advanced statistical learning methodologies.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Methods for Compositional Data using INLA</title>
-      <link>https://ximo1990.github.io/es/project/4.methods-for-compositional-data/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/4.methods-for-compositional-data/</link>
       <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/4.methods-for-compositional-data/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/4.methods-for-compositional-data/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 This project centers on advancing Bayesian hierarchical models to analyze compositional datasets, which are prevalent in ecological and environmental studies. The research introduces novel methodologies, such as Dirichlet regression and logistic-normal models, to handle the complexities of compositional data. These methods facilitate better inference and prediction capabilities, addressing challenges like spatial and temporal correlations. The project&#39;s applications span across diverse areas, including species distribution modeling and air pollution studies, contributing to enhanced decision-making and policy development in environmental science.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Statistical modelling in sports injury prevention</title>
-      <link>https://ximo1990.github.io/es/talk/statistical-modelling-in-sports-injury/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/statistical-modelling-in-sports-injury/</link>
       <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/statistical-modelling-in-sports-injury/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/statistical-modelling-in-sports-injury/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Dealing with physical barriers in bottlenose dolphin (Tursiops truncatus) distribution</title>
-      <link>https://ximo1990.github.io/es/publication/6.martinez-minaya_2019b/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/6.martinez-minaya_2019b/</link>
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/6.martinez-minaya_2019b/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/6.martinez-minaya_2019b/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A comparison of variable selection methods in high-dimensional survival analysis: an application to professional sports injuries</title>
-      <link>https://ximo1990.github.io/es/talk/a-comparison-of-variable-selection/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/a-comparison-of-variable-selection/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/a-comparison-of-variable-selection/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/a-comparison-of-variable-selection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A hierarchical Bayesian Beta regression approach to study the effects of geographical genetic structure and spatial autocorrelation on species distribution range shifts</title>
-      <link>https://ximo1990.github.io/es/publication/5.martinez-minaya_2019a/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/5.martinez-minaya_2019a/</link>
       <pubDate>Tue, 16 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/5.martinez-minaya_2019a/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/5.martinez-minaya_2019a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Survival analysis in professional sports injuries with multivariate regression trees</title>
-      <link>https://ximo1990.github.io/es/talk/survival-analysis-in-professional-sports-injuries/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/survival-analysis-in-professional-sports-injuries/</link>
       <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/survival-analysis-in-professional-sports-injuries/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/survival-analysis-in-professional-sports-injuries/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A multi-state model for the prognosis of non-mild acute pancreatitis</title>
-      <link>https://ximo1990.github.io/es/talk/a-multi-state-model/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/a-multi-state-model/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/a-multi-state-model/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/a-multi-state-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Species distribution modeling: a statistical review with focus in spatio-temporal issues</title>
-      <link>https://ximo1990.github.io/es/publication/3.martinez-minaya_2018a/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/3.martinez-minaya_2018a/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/3.martinez-minaya_2018a/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/3.martinez-minaya_2018a/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spatial and climatic factors associated with the geographical distribution of citrus black spot disease in South Africa. A Bayesian latent Gaussian model approach</title>
-      <link>https://ximo1990.github.io/es/publication/4.martinez-minaya_2018b/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/4.martinez-minaya_2018b/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/4.martinez-minaya_2018b/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/4.martinez-minaya_2018b/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Hierarchical models in Marine Ecology</title>
-      <link>https://ximo1990.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</link>
       <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/5.hierarchical-bayesian-models-in-marine-ecology/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 The &#34;Hierarchical Bayesian Models in Marine Ecology&#34; project aims to enhance the understanding of marine species distribution by developing advanced Bayesian models. By incorporating interactions among species such as dolphins, fish, and seabirds, these models can provide more accurate predictions of species abundance and distribution. The project utilizes real-world data from various marine surveys, applying statistical techniques to analyze the spatial and temporal patterns of marine life. This approach helps in identifying critical factors affecting marine ecosystems and aids in the conservation and management of marine biodiversity.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>Spatial Bayesian Learning in Ecology and Climate Change</title>
-      <link>https://ximo1990.github.io/es/project/2.bayesian-learning-for-ecology/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/2.bayesian-learning-for-ecology/</link>
       <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/2.bayesian-learning-for-ecology/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/2.bayesian-learning-for-ecology/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 This project focuses on the application of Bayesian learning techniques to analyze and interpret Ecological data, aiming to improve our understanding of ecological processes, biodiversity patterns, and the impacts of climate change. By using hierarchical models and spatial analysis, the project addresses key ecological questions such as species distribution, genetic diversity, and environmental impacts. The integration of Bayesian methods provides robust statistical frameworks to handle uncertainty and variability inherent in ecological data. This approach enhances predictive modeling and supports decision-making in conservation and environmental management.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>A multi-state model for the prognosis of non-mild acute pancreatitis</title>
-      <link>https://ximo1990.github.io/es/talk/a-multi-state-model-for-the-prognosis-acute-pancreatitis/</link>
+      <link>https://jmartinez-minaya.github.io/es/talk/a-multi-state-model-for-the-prognosis-acute-pancreatitis/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/talk/a-multi-state-model-for-the-prognosis-acute-pancreatitis/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/talk/a-multi-state-model-for-the-prognosis-acute-pancreatitis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Un sistema predictivo para el control de la mancha foliar del caqui causada por Mycosphaerella nawae</title>
-      <link>https://ximo1990.github.io/es/publication/martinez-minaya_2017_esp/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/martinez-minaya_2017_esp/</link>
       <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/martinez-minaya_2017_esp/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/martinez-minaya_2017_esp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Response to the letter on &#39;Climatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa&#39; by Fourie et al. (2017)</title>
-      <link>https://ximo1990.github.io/es/publication/2.martinez-minaya_2017/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/2.martinez-minaya_2017/</link>
       <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/2.martinez-minaya_2017/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/2.martinez-minaya_2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Internal Project</title>
-      <link>https://ximo1990.github.io/es/obsoleto/project2/internal-project/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/project2/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/project2/internal-project/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/project2/internal-project/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -551,17 +551,17 @@ This project focuses on the application of Bayesian learning techniques to analy
     
     <item>
       <title>Prueba</title>
-      <link>https://ximo1990.github.io/es/obsoleto/project2/external-project/</link>
+      <link>https://jmartinez-minaya.github.io/es/obsoleto/project2/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/obsoleto/project2/external-project/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/obsoleto/project2/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mixed Models for Plant Epidemiology</title>
-      <link>https://ximo1990.github.io/es/project/1.mixed-models-for-plant-epidemiology/</link>
+      <link>https://jmartinez-minaya.github.io/es/project/1.mixed-models-for-plant-epidemiology/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/project/1.mixed-models-for-plant-epidemiology/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/project/1.mixed-models-for-plant-epidemiology/</guid>
       <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
 The project **Mixed Models for Plant Epidemiology** focuses on the use of advanced statistical models to understand and predict the spread of plant diseases. By utilizing Bayesian Mixed Models, the project integrates spatial and temporal data to analyze distribution patterns of diseases such as **Citrus Black Spot**, **Circular Leaf Spot**, and *Xylella fastidiosa*. These models help identify climatic and geographic factors influencing disease propagation, aiding in the design of effective control and mitigation strategies. The insights gained from this project are crucial for developing sustainable agricultural practices and protecting plant health. &lt;/div&gt;
 </description>
@@ -569,25 +569,25 @@ The project **Mixed Models for Plant Epidemiology** focuses on the use of advanc
     
     <item>
       <title>Factores climáticos asociados con la mancha negra de los cítricos causada por Phyllosticta citricarpa en Sudáfrica</title>
-      <link>https://ximo1990.github.io/es/publication/martinez-minaya_2015_esp/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/martinez-minaya_2015_esp/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/martinez-minaya_2015_esp/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/martinez-minaya_2015_esp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Climatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa</title>
-      <link>https://ximo1990.github.io/es/publication/1.martinez-minaya_2015/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/1.martinez-minaya_2015/</link>
       <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/1.martinez-minaya_2015/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/1.martinez-minaya_2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://ximo1990.github.io/es/admin/config.yml</link>
+      <link>https://jmartinez-minaya.github.io/es/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/admin/config.yml</guid>
+      <guid>https://jmartinez-minaya.github.io/es/admin/config.yml</guid>
       <description></description>
     </item>
     

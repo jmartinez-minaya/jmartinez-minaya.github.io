@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SPDE | Joaquín Martínez-Minaya</title>
-    <link>https://ximo1990.github.io/es/tag/spde/</link>
-      <atom:link href="https://ximo1990.github.io/es/tag/spde/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://jmartinez-minaya.github.io/es/tag/spde/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/es/tag/spde/index.xml" rel="self" type="application/rss+xml" />
     <description>SPDE</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>es-es</language><lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://ximo1990.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>SPDE</title>
-      <link>https://ximo1990.github.io/es/tag/spde/</link>
+      <link>https://jmartinez-minaya.github.io/es/tag/spde/</link>
     </image>
     
     <item>
       <title>Incorporating Biotic Information in Species Distribution Models: A Coregionalized Approach</title>
-      <link>https://ximo1990.github.io/es/publication/12.barber_2020/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/12.barber_2020/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/12.barber_2020/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/12.barber_2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title> Dealing with physical barriers in bottlenose dolphin (Tursiops truncatus) distribution</title>
-      <link>https://ximo1990.github.io/es/publication/6.martinez-minaya_2019b/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/6.martinez-minaya_2019b/</link>
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/6.martinez-minaya_2019b/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/6.martinez-minaya_2019b/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Species distribution modeling: a statistical review with focus in spatio-temporal issues</title>
-      <link>https://ximo1990.github.io/es/publication/3.martinez-minaya_2018a/</link>
+      <link>https://jmartinez-minaya.github.io/es/publication/3.martinez-minaya_2018a/</link>
       <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>https://ximo1990.github.io/es/publication/3.martinez-minaya_2018a/</guid>
+      <guid>https://jmartinez-minaya.github.io/es/publication/3.martinez-minaya_2018a/</guid>
       <description></description>
     </item>
     
