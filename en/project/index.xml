@@ -5,12 +5,30 @@
     <link>https://jmartinez-minaya.github.io/en/project/</link>
       <atom:link href="https://jmartinez-minaya.github.io/en/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://jmartinez-minaya.github.io/en/project/</link>
     </image>
+    
+    <item>
+      <title>Predictive Analytics for Jewelry Sales Using Time Series and Machine Learning</title>
+      <link>https://jmartinez-minaya.github.io/en/project/7.time-series-jewlery/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/en/project/7.time-series-jewlery/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project focuses on developing advanced predictive models to forecast sales for a jewelry company. By integrating statistical methods and machine learning algorithms, the research aims to improve the accuracy of sales predictions and provide actionable insights for inventory management and strategic planning. The project utilizes historical sales data, seasonal trends, and economic indicators to build robust predictive models. Key applications include demand forecasting, revenue management, and promotional planning. The outcomes are expected to aid the company in optimizing operations and enhancing customer satisfaction.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Time Series Modeling for Market Shares Using R-INLA</title>
+      <link>https://jmartinez-minaya.github.io/en/project/8.bayesian-time-series-market-shares/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/en/project/8.bayesian-time-series-market-shares/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project aims to enhance the understanding and prediction of market shares for a statistical consultancy. By applying Bayesian compositional time series models, the research focuses on accurately forecasting market dynamics and providing insights into competitive positioning. The project leverages historical market data, economic indicators, and industry trends to build comprehensive models using the INLA framework. Applications include competitive analysis, market trend identification, and strategic planning. The findings are expected to inform decision-making processes and improve the consultancy&#39;s market strategies..&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Bayesian Learning for Microbioma</title>
