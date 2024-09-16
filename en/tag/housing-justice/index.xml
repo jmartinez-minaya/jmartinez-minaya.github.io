@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>green gentrification | Joaquín Martínez-Minaya</title>
-    <link>https://jmartinez-minaya.github.io/en/tag/green-gentrification/</link>
-      <atom:link href="https://jmartinez-minaya.github.io/en/tag/green-gentrification/index.xml" rel="self" type="application/rss+xml" />
-    <description>green gentrification</description>
+    <title>Housing justice | Joaquín Martínez-Minaya</title>
+    <link>https://jmartinez-minaya.github.io/en/tag/housing-justice/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/en/tag/housing-justice/index.xml" rel="self" type="application/rss+xml" />
+    <description>Housing justice</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 24 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
-      <title>green gentrification</title>
-      <link>https://jmartinez-minaya.github.io/en/tag/green-gentrification/</link>
+      <title>Housing justice</title>
+      <link>https://jmartinez-minaya.github.io/en/tag/housing-justice/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://jmartinez-minaya.github.io/en/publication/24.anguelovski_et_al_2024/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
       <guid>https://jmartinez-minaya.github.io/en/publication/24.anguelovski_et_al_2024/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Green gentrification in European and North American cities</title>
-      <link>https://jmartinez-minaya.github.io/en/publication/13.anguelovski_et_al_2022/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://jmartinez-minaya.github.io/en/publication/13.anguelovski_et_al_2022/</guid>
       <description></description>
     </item>
     
