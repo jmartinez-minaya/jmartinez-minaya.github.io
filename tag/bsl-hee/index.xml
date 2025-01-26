@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BSL-HEE | Joaquín Martínez-Minaya</title>
+    <link>https://jmartinez-minaya.github.io/tag/bsl-hee/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/tag/bsl-hee/index.xml" rel="self" type="application/rss+xml" />
+    <description>BSL-HEE</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>BSL-HEE</title>
+      <link>https://jmartinez-minaya.github.io/tag/bsl-hee/</link>
+    </image>
+    
+    <item>
+      <title>Hireves: Interactive Tool for the Relocation of Emergency Medical Vehicles</title>
+      <link>https://jmartinez-minaya.github.io/project/11.hireves/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/11.hireves/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+This project develops an interactive tool called Hireves, designed to optimize the **relocation of emergency medical vehicles**. By integrating human expertise with artificial intelligence (AI) algorithms for interactive optimization, the tool aims to enhance decision-making processes for emergency services. The system incorporates both qualitative and quantitative factors, using data from various sources to propose efficient vehicle allocation strategies that minimize response times and maximize population coverage. Key features include a visual interface for user interaction and feedback, adaptive algorithms for dynamic scenarios, and the ability to explore &#34;what-if&#34; scenarios. The project focuses on creating a resilient, flexible, and human-centered decision-support system, addressing critical needs in emergency response management.
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Survival Models with Latent Variables Modeled by the Zero-Modified Power Series Distribution</title>
+      <link>https://jmartinez-minaya.github.io/project/9.bayesian-survival/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/9.bayesian-survival/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project explores Bayesian methodologies to analyze survival data with latent variables, utilizing INLA and Stan frameworks. A key innovation lies in modeling the latent variables with the **Zero-Modified Power Series distribution**, enabling flexible handling of overdispersion and structural zeros. This approach is particularly suited for survival models with complex data structures, such as those arising in medical and epidemiological studies. The research specifically focuses on applications in lung cancer and melanoma, where survival analysis plays a crucial role in understanding disease progression and treatment efficacy. By integrating prior knowledge and computational efficiency, the project aims to estimate model parameters, assess covariate effects, and provide robust uncertainty quantification. The findings are expected to advance Bayesian methods for survival analysis and offer practical tools for applied researchers in oncology and beyond.
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predictive Analytics for Jewelry Sales Using Time Series and Machine Learning</title>
+      <link>https://jmartinez-minaya.github.io/project/7.time-series-jewlery/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/7.time-series-jewlery/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project focuses on developing advanced predictive models to forecast sales for a jewelry company. By integrating statistical methods and machine learning algorithms, the research aims to improve the accuracy of sales predictions and provide actionable insights for inventory management and strategic planning. The project utilizes historical sales data, seasonal trends, and economic indicators to build robust predictive models. Key applications include demand forecasting, revenue management, and promotional planning. The outcomes are expected to aid the company in optimizing operations and enhancing customer satisfaction.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Time Series Modeling for Market Shares Using R-INLA</title>
+      <link>https://jmartinez-minaya.github.io/project/8.bayesian-time-series-market-shares/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/8.bayesian-time-series-market-shares/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project aims to enhance the understanding and prediction of market shares for a statistical consultancy. By applying Bayesian compositional time series models, the research focuses on accurately forecasting market dynamics and providing insights into competitive positioning. The project leverages historical market data, economic indicators, and industry trends to build comprehensive models using the INLA framework. Applications include competitive analysis, market trend identification, and strategic planning. The findings are expected to inform decision-making processes and improve the consultancy&#39;s market strategies..&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>How good is this medical device? Bayesian mixed models for agreement measures</title>
+      <link>https://jmartinez-minaya.github.io/project/10.measurement-agreement/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/10.measurement-agreement/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+This project develops **Bayesian mixed models** for assessing agreement metrics between medical devices, focusing on chronic obstructive pulmonary disease (COPD). These models incorporate expert knowledge and allow robust inference by accommodating outliers using heavy-tailed distributions, such as the t-distribution. The project also provides a software package to facilitate the use of these methods, offering user-friendly tools for diagnostics and analysis. Applications include evaluating agreement between new diagnostic devices and existing gold-standard methods for COPD patients. By improving statistical rigor, the research aims to benefit clinical decision-making and prevent the misclassification of inferior or superior devices due to inadequate analyses. The project combines advanced statistical techniques with practical applications, contributing to medical statistics and clinical practice advancements.
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Learning for Microbioma</title>
+      <link>https://jmartinez-minaya.github.io/project/6.bayesian-learning-for-microbioma/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/6.bayesian-learning-for-microbioma/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+In this project, we utilize Bayesian Dirichlet models to analyze the impact of stress on vaginal microbiome composition. By examining cortisol levels in hair and blood as proxies for stress, the study explores how mental health disturbances influence microbial communities. The research involves genetic analysis of microbiota from 259 middle-aged women, identifying key bacterial profiles linked to vaginal health. Findings suggest that variations in Lactobacillus spp. and other genera may indicate dysbiosis related to stress. This project aims to enhance understanding of the microbiome&#39;s role in health and disease, guiding future therapeutic strategies.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Statistical Machine Learning in Environmental Health</title>
+      <link>https://jmartinez-minaya.github.io/project/3.statistical-learning-in-environmental-health/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/project/3.statistical-learning-in-environmental-health/</guid>
+      <description>&lt;div style=&#39;text-align: justify;&#39;&gt;
+The project employs Statistics and Machine learning techniques to analyze the influence of environmental factors, such as air pollution, on public health. Studies reveal strong correlations between exposure to pollutants and the severity of health outcomes, particularly during the COVID-19 pandemic. Research findings indicate that socio-economic and environmental determinants critically affect disease spread and severity. By integrating various data sources, the project aims to enhance predictive models for better health risk assessments. This multidisciplinary approach underscores the importance of addressing environmental health challenges through advanced statistical learning methodologies.&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

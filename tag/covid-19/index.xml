@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COVID-19 | Joaquín Martínez-Minaya</title>
+    <link>https://jmartinez-minaya.github.io/tag/covid-19/</link>
+      <atom:link href="https://jmartinez-minaya.github.io/tag/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <description>COVID-19</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jmartinez-minaya.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>COVID-19</title>
+      <link>https://jmartinez-minaya.github.io/tag/covid-19/</link>
+    </image>
+    
+    <item>
+      <title>Cost-sensitive ordinal classification methods to predict SARS-CoV-2 pneumonia severity</title>
+      <link>https://jmartinez-minaya.github.io/publication/21.garcia-garcia_et_al_2024/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/publication/21.garcia-garcia_et_al_2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of outdoor air pollution on severity and mortality in COVID-19 pneumonia</title>
+      <link>https://jmartinez-minaya.github.io/publication/19.bronte-et-al.-2023/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/publication/19.bronte-et-al.-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques</title>
+      <link>https://jmartinez-minaya.github.io/publication/18.hayet-otero_et_al_2023/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://jmartinez-minaya.github.io/publication/18.hayet-otero_et_al_2023/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
