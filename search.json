@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Be Bayesian my Friend (2h)\n\nIntroductory workshop on Bayesian inference, covering the theorem, posterior distributions and credible intervals, hierarchical models, and hands-on modelling with brms.\n\nBe Bayesian my Friend 2.0 (20h)\n\nA comprehensive four-part introduction to Bayesian inference, from priors and MCMC to hierarchical and spatial models, using JAGS, brms, INLA and inlabru, with real-world health applications throughout.\n\nBayesian Inference Using R-INLA (10h)\n\nWorkshop on fitting latent Gaussian models with INLA and inlabru, from fundamentals to spatial modelling, disease mapping and geostatistics, through six hands-on lessons with real datasets."
+  },
+  {
+    "objectID": "teaching.html#specialization-courses",
+    "href": "teaching.html#specialization-courses",
+    "title": "Teaching",
+    "section": "",
+    "text": "Be Bayesian my Friend (2h)\n\nIntroductory workshop on Bayesian inference, covering the theorem, posterior distributions and credible intervals, hierarchical models, and hands-on modelling with brms.\n\nBe Bayesian my Friend 2.0 (20h)\n\nA comprehensive four-part introduction to Bayesian inference, from priors and MCMC to hierarchical and spatial models, using JAGS, brms, INLA and inlabru, with real-world health applications throughout.\n\nBayesian Inference Using R-INLA (10h)\n\nWorkshop on fitting latent Gaussian models with INLA and inlabru, from fundamentals to spatial modelling, disease mapping and geostatistics, through six hands-on lessons with real datasets."
+  },
+  {
+    "objectID": "teaching.html#university-courses",
+    "href": "teaching.html#university-courses",
+    "title": "Teaching",
+    "section": "University courses",
+    "text": "University courses\n\n2025–2026\n\nEconometrics — Bachelor’s degree in Business Administration and Management\nBayesian Learning Methods — Master’s Degree in Data Analysis, Process Improvement and Decision Support Engineering\nPredictive Models — Bachelor’s degree in Data Science\nIntroduction to AI (Project I) — Bachelor’s degree in Artificial Intelligence\nData Analysis (Project III) — Bachelor’s degree in Data Science\nBayesian Inference Using R-INLA — Master’s degree in Biostatistics\n\n\n\n2024–2025\n\nData Analysis in Medical Research — Master’s Degree in Data Analysis, Process Improvement and Decision Support Engineering\nEconometrics — Bachelor’s degree in Business Administration and Management\nPredictive Models — Bachelor’s degree in Data Science\nData Analysis (Project III) — Bachelor’s degree in Data Science\nBayesian Inference Using R-INLA — Master’s degree in Biostatistics\n\n\n\n2023–2024\n\nPredictive Models — Bachelor’s degree in Data Science\nEconometrics — Double degree in Telecommunications Engineering and Business Administration and Management\nEconometrics — Double degree in Food Technology and Business Administration and Management\nEconometrics — Bachelor’s degree in Business Administration and Management\nBayesian Inference Using R-INLA — Master’s degree in Biostatistics\n\n\n\n2022–2023\n\nStatistics — Bachelor’s degree in Aerospace Engineering\nStatistics — Bachelor’s degree in Mechanical Engineering\nStatistics — Bachelor’s degree in Industrial Engineering\nEconometrics — Bachelor’s degree in Business Administration and Management\nBayesian Inference Using R-INLA — Master’s degree in Biostatistics\n\n\n\n2021–2022\n\nStatistics — Bachelor’s degree in Aerospace Engineering\nStatistics — Bachelor’s degree in Mechanical Engineering\nStatistics — Bachelor’s degree in Industrial Engineering\nEconometrics — Bachelor’s degree in Business Administration and Management\nBayesian Inference Using R-INLA — Master’s degree in Biostatistics"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Soil Texture Prediction with Bayesian Generalized Additive Models for Spatial Compositional Data\n\n\nJoaquín Martínez-Minaya, Lore Zumeta-Olaskoaga, Dae-Jin Lee\n\n\nLink · Code\n\n\n\n\nA Bayesian survival model induced by hurdle zero-modified power series discrete frailty with dispersion: an application in lung cancer\n\n\nKaty C. Molina, Joaquín Martínez-Minaya, Danilo Alvares, Vera D. Tomazella\n\n\nLink · Code"
+  },
+  {
+    "objectID": "publications.html#preprints-under-review",
+    "href": "publications.html#preprints-under-review",
+    "title": "Publications",
+    "section": "",
+    "text": "Soil Texture Prediction with Bayesian Generalized Additive Models for Spatial Compositional Data\n\n\nJoaquín Martínez-Minaya, Lore Zumeta-Olaskoaga, Dae-Jin Lee\n\n\nLink · Code\n\n\n\n\nA Bayesian survival model induced by hurdle zero-modified power series discrete frailty with dispersion: an application in lung cancer\n\n\nKaty C. Molina, Joaquín Martínez-Minaya, Danilo Alvares, Vera D. Tomazella\n\n\nLink · Code"
+  },
+  {
+    "objectID": "publications.html#published",
+    "href": "publications.html#published",
+    "title": "Publications",
+    "section": "Published",
+    "text": "Published\n\n2026\n\n\n\nA Random Activation Framework for Cure Models with Waring-Distributed Latent Causes\n\n\nJonathan K. J. Vasquez, Vera Tomazella, Danilo Alvares, Pedro Rafael D. Marinho, Joaquín Martínez-Minaya\n\n\nLink\n\n\n\n2024\n\n\n\nAutomatic cross-validation in structured models: Is it time to leave out leave-one-out?\n\n\nAritz Adin, Elias Teixeira Krainski, Amanda Lenzi, Zhedong Liu, Joaquín Martínez-Minaya, Haavard Rue\n\n\nLink · Code\n\n\n\n\nDoes greening generate exclusive residential real estate development? Contrasting experiences from North America and Europe\n\n\nIsabelle Anguelovski, Emilia Oscilowicz, James J.T. Connolly, et al., Joaquín Martínez-Minaya\n\n\nLink\n\n\n\n\nA flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance\n\n\nJoaquín Martínez-Minaya, Haavard Rue\n\n\nLink · Code\n\n\n\n\nCost-sensitive ordinal classification methods to predict SARS-CoV-2 pneumonia severity\n\n\nFernando García-García, Dae-Jin Lee, et al., Joaquín Martínez-Minaya, et al., COVID-19 & Air Pollution Working Group\n\n\nLink\n\n\n\n2023\n\n\n\nA novel statistical approach to deal with spatial bias in maturity ogive estimation\n\n\nMarta Cousido-Rocha, Francisco Izquierdo, Joaquín Martínez-Minaya, et al.\n\n\nLink\n\n\n\n\nImpact of outdoor air pollution on severity and mortality in COVID-19 pneumonia\n\n\nO. Bronte, F. García-García, D.-J. Lee, et al., Joaquín Martínez-Minaya, et al., COVID-19 & Air Pollution Working Group\n\n\nLink\n\n\n\n\nExtracting relevant predictive variables for COVID-19 severity prognosis: An exhaustive comparison of feature selection techniques\n\n\nMiren Hayet-Otero, Fernando García-García, Dae-Jin Lee, Joaquín Martínez-Minaya, et al.\n\n\nLink\n\n\n\n\nThe Integrated Nested Laplace Approximation for Fitting Dirichlet Regression Models\n\n\nJoaquín Martínez-Minaya, Finn Lindgren, Antonio López-Quílez, Daniel Simpson, David Conesa\n\n\nLink\n\n\n\n\nModelling seabirds biodiversity through Bayesian Spatial Beta regression models: A proxy to inform marine protected areas in the Mediterranean Sea\n\n\nBlanca Sarzo, Joaquín Martínez-Minaya, Maria Grazia Pennino, David Conesa, Marta Coll\n\n\nLink\n\n\n\n2022\n\n\n\nExploring green gentrification in 28 global North cities: the role of urban parks and other types of greenspaces\n\n\nMargarita Triguero-Mas, Isabelle Anguelovski, et al., Joaquín Martínez-Minaya, et al.\n\n\nLink\n\n\n\n\nA mesoscale analysis of relations between fish species richness and environmental and anthropogenic pressures in the Mediterranean Sea\n\n\nJoão Carmezim, Maria Grazia Pennino, Joaquín Martínez-Minaya, David Conesa, Marta Coll\n\n\nLink\n\n\n\n\nGreen gentrification in European and North American cities\n\n\nIsabelle Anguelovski, James J. T. Connolly, et al., Joaquín Martínez-Minaya\n\n\nLink\n\n\n\n2021\n\n\n\nModeling Inoculum Availability of Plurivorosphaerella nawae in Persimmon Leaf Litter with Bayesian Beta Regression\n\n\nJoaquín Martínez-Minaya, David Conesa, Antonio López-Quílez, José Luis Mira, Antonio Vicent\n\n\nLink · Code\n\n\n\n2020\n\n\n\nIncorporating Biotic Information in Species Distribution Models: A Coregionalized Approach\n\n\nXavier Barber, David Conesa, Antonio López-Quílez, Joaquín Martínez-Minaya, Maria Grazia Pennino\n\n\nLink · Code\n\n\n\n\nSpatial Bayesian Modeling Applied to the Surveys of Xylella fastidiosa in Alicante (Spain) and Apulia (Italy)\n\n\nMartina Cendoya, Joaquín Martínez-Minaya, Vicente Dalmau, Amparo Ferrer, Maria Saponari, David Conesa, Antonio López-Quílez, Antonio Vicent\n\n\nLink\n\n\n\n\nA decision support system based on degree-days to initiate fungicide spray programs for peach powdery mildew in Catalonia, Spain\n\n\nNeus Marimon, Iban Eduardo, Joaquín Martínez-Minaya, Antonio Vicent, Jordi Luque\n\n\nLink\n\n\n\n\nEcological, genetic and evolutionary drivers of regional genetic differentiation in Arabidopsis thaliana\n\n\nAntonio R. Castilla, Belén Méndez Vigo, Arnald Marcer, Joaquín Martínez-Minaya, David Conesa, F. Xavier Picó, Carlos Alonso-Blanco\n\n\nLink · Code · Dataset\n\n\n\n\nComparison of Frequentist and Bayesian Meta-Analysis Models for Assessing the Efficacy of Decision Support Systems in Reducing Fungal Disease Incidence\n\n\nElena Lázaro, David Makowski, Joaquín Martínez-Minaya, Antonio Vicent\n\n\nLink · Code\n\n\n\n2019\n\n\n\nDealing with physical barriers in bottlenose dolphin (Tursiops truncatus) distribution\n\n\nJoaquín Martínez-Minaya, David Conesa, Haakon Bakka, Maria Grazia Pennino\n\n\nLink\n\n\n\n\nA hierarchical Bayesian Beta regression approach to study the effects of geographical genetic structure and spatial autocorrelation on species distribution range shifts\n\n\nJoaquín Martínez-Minaya, David Conesa, Marie-Josée Fortin, Carlos Alonso-Blanco, F. Xavier Picó, Arnald Marcer\n\n\nLink · Code\n\n\n\n2018\n\n\n\nSpecies distribution modeling: a statistical review with focus in spatio-temporal issues\n\n\nJoaquín Martínez-Minaya, Michela Cameletti, David Conesa, Maria Grazia Pennino\n\n\nLink\n\n\n\n\nSpatial and climatic factors associated with the geographical distribution of citrus black spot disease in South Africa. A Bayesian latent Gaussian model approach\n\n\nJoaquín Martínez-Minaya, David Conesa, Antonio López-Quílez, Antonio Vicent\n\n\nLink\n\n\n\n2017\n\n\n\nUn sistema predictivo para el control de la mancha foliar del caqui causada por Mycosphaerella nawae\n\n\nJoaquín Martínez-Minaya, Antonio López-Quílez, David Conesa, José Luis Mira, Antonio Vicent\n\n\nLink\n\n\n\n\nResponse to the letter on ‘Climatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa’ by Fourie et al. (2017)\n\n\nJoaquín Martínez-Minaya, David Conesa, Antonio López-Quílez, Antonio Vicent\n\n\nLink\n\n\n\n2015\n\n\n\nFactores climáticos asociados con la mancha negra de los cítricos causada por Phyllosticta citricarpa en Sudáfrica\n\n\nJoaquín Martínez-Minaya, Antonio Vicent, David Conesa, Antonio López-Quílez\n\n\nLink\n\n\n\n\nClimatic distribution of citrus black spot caused by Phyllosticta citricarpa. A historical analysis of disease spread in South Africa\n\n\nJoaquín Martínez-Minaya, David Conesa, Antonio López-Quílez, Antonio Vicent\n\n\nLink"
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Software & Materials",
+    "section": "",
+    "text": "Programming — R, Python, C++, Shiny\nVersion control — Git, GitHub\nBayesian software — INLA, inlabru, Stan, brms, JAGS, OpenBUGS"
+  },
+  {
+    "objectID": "materials.html#technical-skills",
+    "href": "materials.html#technical-skills",
+    "title": "Software & Materials",
+    "section": "",
+    "text": "Programming — R, Python, C++, Shiny\nVersion control — Git, GitHub\nBayesian software — INLA, inlabru, Stan, brms, JAGS, OpenBUGS"
+  },
+  {
+    "objectID": "materials.html#packages-code-and-tutorials",
+    "href": "materials.html#packages-code-and-tutorials",
+    "title": "Software & Materials",
+    "section": "Packages, code and tutorials",
+    "text": "Packages, code and tutorials\n\n2024 — INLAComp\n\nManuscript: A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance\nR package: INLAComp\nTutorials:\n\nFitting LNDMs with fixed effects\nFitting spatial LNDMs — a simulation\nFitting LNDMs with fixed and random effects — a real problem\n\n\n\n\n2023 — dirinla\n\nManuscript: The Integrated Nested Laplace Approximation for Fitting Dirichlet Regression Models (arXiv)\nR package: dirinla\nTutorials:\n\nFitting Dirichlet regression with fixed effects\nFitting Dirichlet regression with random effects\nSimulation results using fixed and i.i.d. random effects\n\n\n\n\n2021 — Plant epidemiology\n\nManuscript: Modeling Inoculum Availability of Plurivorosphaerella nawae in Persimmon Leaf Litter with Bayesian Beta Regression\nR code: betapathogen\nTutorial: Fitting a mixed model for inoculum availability\n\n\n\n2019 — Arabidopsis thaliana\n\nManuscript: A hierarchical Bayesian Beta regression approach to study the effects of geographical genetic structure and spatial autocorrelation on species distribution range shifts\nCode & data: Zenodo archive"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Joaquín Martínez-Minaya",
+    "section": "",
+    "text": "Email\n  \n  \n     ORCID\n  \n  \n     Google Scholar\n  \n  \n     ResearchGate\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     X / Twitter\n  \n  \n    \n     CV\n  \n\n  \n  \n\nAssociate Professor in Statistics and Optimization\n\nDept. of Applied Statistics, Operations Research and Quality · Universitat Politècnica de València\nMy name is Joaquín Martínez-Minaya, and I am an Associate Professor in the Department of Applied Statistics and Operational Research and Quality at the Universitat Politècnica de València (Spain). My research lies in the field of Applied and Computational Bayesian Statistics, where I develop statistical methods for the analysis of multivariate, compositional, spatial and spatio-temporal data. My work combines methodological developments in Bayesian inference with applications in environmental health, ecology and biomedicine. I am interested in hierarchical models, latent Gaussian models, compositional data analysis, measurement agreement, model assessment, validation and predictive performance, and species distribution modelling. From a computational perspective, my research relies on Bayesian inference techniques, especially Integrated Nested Laplace Approximation (INLA) and Hamiltonian Monte Carlo methods.\n\n\n\nSpatio-temporal Models Compositional Data Analysis Bayesian Computational Methods Bayesian Deep Learning Mixed & Hierarchical Models Species Distribution Modelling Environmental Health Biomedicine\n\n\n\n\n\nPhD in Statistics and Optimization, University of Valencia and Valencian Institute for Agricultural Research, 2019\nMSc in Biostatistics, University of Valencia, 2015\nBSc in Mathematics, University of Valencia, 2013\n\n\n\n\n\nAssociate Professor in Statistics and Optimization, Universitat Politècnica de València, Sep 2024–present\nAssistant Professor in Statistics and Optimization, Universitat Politècnica de València, Jul 2021–Sep 2024\nPostdoctoral Researcher, Basque Center for Applied Mathematics (BCAM), Bilbao, Sep 2019–Sep 2021\nPhD student, University of Valencia, 2016–2019\nBiostatistician, Valencian Institute for Agricultural Research (IVIA), 2014–2016\nBiostatistician, Experior S.L., 2014\n\n\n\n\n\nHarvard University (USA), Fulbright Visiting Scholar with Francesca Dominici and Christopher Golden, Jul–Dec 2026\nUniversity of Edinburgh (UK), with Vanda Inácio and Finn Lindgren, Oct–Nov 2024\nKAUST (Saudi Arabia), with Haavard Rue, Nov–Dec 2022\nUniversity of Edinburgh (UK), with Ruth King and Blanca Sarzo, Aug–Sep 2022\nKAUST (Saudi Arabia), with Haavard Rue, Feb–Mar 2020\nUniversity of Edinburgh (UK), with Finn Lindgren, Sep–Nov 2018\nUniversity of Edinburgh (UK), with Finn Lindgren, Sep–Nov 2017"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Joaquín Martínez-Minaya",
+    "section": "",
+    "text": "Spatio-temporal Models Compositional Data Analysis Bayesian Computational Methods Bayesian Deep Learning Mixed & Hierarchical Models Species Distribution Modelling Environmental Health Biomedicine"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Joaquín Martínez-Minaya",
+    "section": "",
+    "text": "PhD in Statistics and Optimization, University of Valencia and Valencian Institute for Agricultural Research, 2019\nMSc in Biostatistics, University of Valencia, 2015\nBSc in Mathematics, University of Valencia, 2013"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Joaquín Martínez-Minaya",
+    "section": "",
+    "text": "Associate Professor in Statistics and Optimization, Universitat Politècnica de València, Sep 2024–present\nAssistant Professor in Statistics and Optimization, Universitat Politècnica de València, Jul 2021–Sep 2024\nPostdoctoral Researcher, Basque Center for Applied Mathematics (BCAM), Bilbao, Sep 2019–Sep 2021\nPhD student, University of Valencia, 2016–2019\nBiostatistician, Valencian Institute for Agricultural Research (IVIA), 2014–2016\nBiostatistician, Experior S.L., 2014"
+  },
+  {
+    "objectID": "index.html#research-stays",
+    "href": "index.html#research-stays",
+    "title": "Joaquín Martínez-Minaya",
+    "section": "",
+    "text": "Harvard University (USA), Fulbright Visiting Scholar with Francesca Dominici and Christopher Golden, Jul–Dec 2026\nUniversity of Edinburgh (UK), with Vanda Inácio and Finn Lindgren, Oct–Nov 2024\nKAUST (Saudi Arabia), with Haavard Rue, Nov–Dec 2022\nUniversity of Edinburgh (UK), with Ruth King and Blanca Sarzo, Aug–Sep 2022\nKAUST (Saudi Arabia), with Haavard Rue, Feb–Mar 2020\nUniversity of Edinburgh (UK), with Finn Lindgren, Sep–Nov 2018\nUniversity of Edinburgh (UK), with Finn Lindgren, Sep–Nov 2017"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "PI ComSOVA — Bayesian Learning for High-Dimensional Compositional Data: Analysis of the Socioeconomic Impact on the Vaginal Microbiota (CIGE/2024/71)\n\nUniversitat Politècnica de València, FISABIO & Universitat de València · Sep 2025–Sep 2026 · Generalitat Valenciana\n\nNovel Methodologies for Multi-Omics Integrative Analysis with Cutting-Edge Sequencing Technologies (PID2023-152976NB-I00)\n\nI2SysBio (CSIC) · Research team (PI: Sonia Tarazona & Ana Conesa) · Sep 2024–Aug 2027 · Spanish Government\n\nHireves — Interactive Tool for the Relocation of Emergency Medical Vehicles (INNVA1/2024/91)\n\nUniversitat Politècnica de València · Research team (PI: Fulgencia Villa & Víctor Sánchez) · Jan 2024–Dec 2026 · Agencia Valenciana de la Innovación\n\nPI How good is this medical device? Bayesian mixed models for agreement measures\n\nUniversitat Politècnica de València & University of Edinburgh · PI jointly with Vanda Inácio · Sep 2023–Aug 2026 · The Royal Society\n\nBayesian Analysis of Compositional Data of Human Microbiota (ComBIOTA)\n\nFISABIO, Universitat de València & Universitat Politècnica de València · Research team (PI: Blanca Sarzo) · Jan 2022–Dec 2023 · Generalitat Valenciana\n\nNew Proposals for Estimation, Prediction and Validation of Semi-Parametric Models for Complex Data, with Applications in Health and Climate Change (PID2020-115882RB-I00)\n\nBasque Center for Applied Mathematics (BCAM) · Research team (PI: Dae-Jin Lee) · Sep 2021–Aug 2024 · Spanish Government\n\nBMTF — Applied Mathematical Modelling for Health\n\nBasque Center for Applied Mathematics (BCAM) · Research team (PI: Coté Rodríguez & Dae-Jin Lee) · Jan–Dec 2021 · Basque Government\n\nDevelopment of Spatial Erosivity Factor Prediction Models under Climate Change Scenarios\n\nBasque Institute for Agricultural Research (NEIKER) · Research team (PI: Dae-Jin Lee) · Sep–Dec 2020 · Basque Government\n\n3KIA — Integral and Cross-Cutting Proposal for the Design and Implementation of Reliable AI-Based Systems (ELKARTEK)\n\nBasque Government · Research team (PI: Dae-Jin Lee & Coté Rodríguez) · Mar 2020–Dec 2021 · Basque Government"
+  },
+  {
+    "objectID": "supervision.html",
+    "href": "supervision.html",
+    "title": "Supervision",
+    "section": "",
+    "text": "Bayesian Neural Networks for Enhanced Biomedical Image Segmentation: Methods and Applications — Sebastián Bera (2024– )\n\nStatistics and Operations Research PhD, Universitat Politècnica de València · co-supervised with Adrián Colomer\n\nBayesian Statistical Modeling for Spatiotemporal and Compositional Data in Marine Science: New Tools and Applications — Jorge Mestre (2024– )\n\nStatistics and Operations Research PhD, Universitat Politècnica de València · co-supervised with Marta Coll\n\nBayesian Multivariate Modeling of High-Dimensional Compositional Microbiome Data — Oihane Álvarez Polo (2024– )\n\nStatistics and Operations Research PhD, Universitat Politècnica de València · co-supervised with Blanca Sarzo & María José López-Espinosa\n\nEffect of B-cell Lymphomas on the Immune System and Immune Reconstitution after Chemoimmunotherapy — Eva María Donato Martín (2023– )\n\nMedicine PhD, Universitat de València · co-supervised with María José Terol Casterá"
+  },
+  {
+    "objectID": "supervision.html#doctoral-thesis-supervision",
+    "href": "supervision.html#doctoral-thesis-supervision",
+    "title": "Supervision",
+    "section": "",
+    "text": "Bayesian Neural Networks for Enhanced Biomedical Image Segmentation: Methods and Applications — Sebastián Bera (2024– )\n\nStatistics and Operations Research PhD, Universitat Politècnica de València · co-supervised with Adrián Colomer\n\nBayesian Statistical Modeling for Spatiotemporal and Compositional Data in Marine Science: New Tools and Applications — Jorge Mestre (2024– )\n\nStatistics and Operations Research PhD, Universitat Politècnica de València · co-supervised with Marta Coll\n\nBayesian Multivariate Modeling of High-Dimensional Compositional Microbiome Data — Oihane Álvarez Polo (2024– )\n\nStatistics and Operations Research PhD, Universitat Politècnica de València · co-supervised with Blanca Sarzo & María José López-Espinosa\n\nEffect of B-cell Lymphomas on the Immune System and Immune Reconstitution after Chemoimmunotherapy — Eva María Donato Martín (2023– )\n\nMedicine PhD, Universitat de València · co-supervised with María José Terol Casterá"
+  },
+  {
+    "objectID": "supervision.html#visiting-doctoral-students",
+    "href": "supervision.html#visiting-doctoral-students",
+    "title": "Supervision",
+    "section": "Visiting doctoral students",
+    "text": "Visiting doctoral students\n\nA Random Activation Framework for Cure Models with Waring-Distributed Latent Causes — Jonathan Kevin Vasquez (2025–2026)\n\nUniversity of São Carlos · collaborative work with Vera Tomazella & Danilo Alvares da Silva\n\nBayesian Analysis with INLA for Survival Models with Latent Variables Modeled by the Zero-Modified Power Series Distribution — Katy Rocío Cruz Molina (Sep 2024–Jun 2025)\n\nUniversity of São Carlos · collaborative work with Vera Tomazella & Danilo Alvares da Silva"
+  },
+  {
+    "objectID": "supervision.html#masters-thesis-supervision",
+    "href": "supervision.html#masters-thesis-supervision",
+    "title": "Supervision",
+    "section": "Master’s thesis supervision",
+    "text": "Master’s thesis supervision\n\nMethodology for Estimating the Useful Life of Mining Drilling Tools Using Bayesian Reliability Models — Reinaldo Arturo Espina Navarro (2025)\n\nMaster’s in Data Analysis, Process Improvement and Decision Support Engineering, Universitat Politècnica de València\n\nPrecision and Uncertainty in Image Classification for the Food Industry: A Deterministic and Bayesian Convolutional Neural Network Approach — Raúl López Romero (2024)\n\nMaster’s in Data Analysis, Process Improvement and Decision Support Engineering, Universitat Politècnica de València · co-supervised with Adrián Colomer\n\nPredictive Models for a Modal Split Problem — Luis Enrique Palma Mejía (2023–2024)\n\nMaster’s in Data Analysis, Process Improvement and Decision Support Engineering, Universitat Politècnica de València · co-supervised with Eva Vallada\n\nBayesian Zero-Inflated Modeling of the Incidence and Burden of Injuries in Professional European Football — Oihane Álvarez Polo (2022–2023)\n\nMaster’s in Biostatistics, Universitat de València · co-supervised with Dae-Jin Lee\n\nSpatial Analysis of Spanish Bank Branches — Constanza Dalla Quercia (2021–2022)\n\nMaster’s in Data Analysis for Business, Università Cattolica del Sacro Cuore · co-supervised with David Conesa\n\nSpatial Bayesian Geo-Additive Modelling: Predicting Soil Texture in the Basque Country — Miguel Ruá del Barrio (2019–2020)\n\nMaster’s in Biostatistics, Universitat de València · co-supervised with Dae-Jin Lee\n\nSpatial Modeling of Fish Richness in the Mediterranean Sea — Joao Carmezim (2019–2020)\n\nMaster’s in Biostatistics, Universitat de València · co-supervised with David Conesa"
+  },
+  {
+    "objectID": "supervision.html#bachelors-thesis-supervision",
+    "href": "supervision.html#bachelors-thesis-supervision",
+    "title": "Supervision",
+    "section": "Bachelor’s thesis supervision",
+    "text": "Bachelor’s thesis supervision\n\nIntegrated Processing of Industrial Telemetry for Temperature Modelling in Railway Bearings — Eva Martín Iglesias (2025)\n\nBachelor’s degree in Data Science, Universitat Politècnica de València · co-supervised with Javier Jorge Cano and José Ponce Hernando\n\nPredicting Supermarket Condiment Sales Using Time Series Models — Óscar Jiménez Bou (2025)\n\nBachelor’s degree in Business Administration and Management, Universitat Politècnica de València"
+  }
+]

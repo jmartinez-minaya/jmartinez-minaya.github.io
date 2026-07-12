@@ -1,3 +1,1 @@
-User-agent: *
-
 Sitemap: https://jmartinez-minaya.github.io/sitemap.xml
