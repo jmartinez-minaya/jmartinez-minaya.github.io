@@ -46,21 +46,7 @@
     "href": "materials.html",
     "title": "Software & Materials",
     "section": "",
-    "text": "Programming — R, Python, C++, Shiny\nVersion control — Git, GitHub\nBayesian software — INLA, inlabru, Stan, brms, JAGS, OpenBUGS"
-  },
-  {
-    "objectID": "materials.html#technical-skills",
-    "href": "materials.html#technical-skills",
-    "title": "Software & Materials",
-    "section": "",
-    "text": "Programming — R, Python, C++, Shiny\nVersion control — Git, GitHub\nBayesian software — INLA, inlabru, Stan, brms, JAGS, OpenBUGS"
-  },
-  {
-    "objectID": "materials.html#packages-code-and-tutorials",
-    "href": "materials.html#packages-code-and-tutorials",
-    "title": "Software & Materials",
-    "section": "Packages, code and tutorials",
-    "text": "Packages, code and tutorials\n\n2024 — INLAComp\n\nManuscript: A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance\nR package: INLAComp\nTutorials:\n\nFitting LNDMs with fixed effects\nFitting spatial LNDMs — a simulation\nFitting LNDMs with fixed and random effects — a real problem\n\n\n\n\n2023 — dirinla\n\nManuscript: The Integrated Nested Laplace Approximation for Fitting Dirichlet Regression Models (arXiv)\nR package: dirinla\nTutorials:\n\nFitting Dirichlet regression with fixed effects\nFitting Dirichlet regression with random effects\nSimulation results using fixed and i.i.d. random effects\n\n\n\n\n2021 — Plant epidemiology\n\nManuscript: Modeling Inoculum Availability of Plurivorosphaerella nawae in Persimmon Leaf Litter with Bayesian Beta Regression\nR code: betapathogen\nTutorial: Fitting a mixed model for inoculum availability\n\n\n\n2019 — Arabidopsis thaliana\n\nManuscript: A hierarchical Bayesian Beta regression approach to study the effects of geographical genetic structure and spatial autocorrelation on species distribution range shifts\nCode & data: Zenodo archive"
+    "text": "2024 — INLAComp\n\nManuscript: A flexible Bayesian tool for CoDa mixed models: logistic-normal distribution with Dirichlet covariance\nR package: INLAComp\nTutorials:\n\nFitting LNDMs with fixed effects\nFitting spatial LNDMs — a simulation\nFitting LNDMs with fixed and random effects — a real problem\n\n\n\n\n2023 — dirinla\n\nManuscript: The Integrated Nested Laplace Approximation for Fitting Dirichlet Regression Models (arXiv)\nR package: dirinla\nTutorials:\n\nFitting Dirichlet regression with fixed effects\nFitting Dirichlet regression with random effects\nSimulation results using fixed and i.i.d. random effects\n\n\n\n\n2021 — Plant epidemiology\n\nManuscript: Modeling Inoculum Availability of Plurivorosphaerella nawae in Persimmon Leaf Litter with Bayesian Beta Regression\nR code: betapathogen\nTutorial: Fitting a mixed model for inoculum availability\n\n\n\n2019 — Arabidopsis thaliana\n\nManuscript: A hierarchical Bayesian Beta regression approach to study the effects of geographical genetic structure and spatial autocorrelation on species distribution range shifts\nCode & data: Zenodo archive"
   },
   {
     "objectID": "index.html",
