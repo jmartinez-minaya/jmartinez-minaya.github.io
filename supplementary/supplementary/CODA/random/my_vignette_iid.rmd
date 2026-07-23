@@ -1,0 +1,447 @@
+---
+title: "dirinla using random effects"
+author: "Joaquín Martínez-Minaya and Finn Lindgren"
+date: "`r Sys.Date()`"
+linestretch: "1.5"
+
+output:   
+  bookdown::html_document2:
+  #theme: cerulean
+    df_print: paged
+    code_folding: hide
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: true
+header-includes:
+   - \newcommand{\vekey}[1]{{\boldsymbol{#1}}} %vectors
+   - \newcommand{\ve}[1]{{\boldsymbol{#1}}} %vectors
+
+
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>", 
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  cache   = FALSE
+)
+library(dirinla)
+library(INLA)
+library(dplyr)
+library(DirichletReg) #Dirichlet
+library(knitr)
+library(ggplot2)
+
+
+```
+
+# Introduction
+This document is devoted to explain how the `dirinla` package deal with random effects. we show the main idea of the method, depict how it has been implemented, and lastly, show an example.
+
+
+# Theoretical idea
+
+## Dirichlet regression
+Let $\vekey{Y}$ be a matrix with $C$ rows and $N$ columns denoting $N$ observations for the different categories $C$ of the $C$ dimensional response variable $\vekey{Y}_{\bullet n} \sim \mathcal{D}(\vekey{\alpha}_n)$. Let $\eta_{cn}$ be the linear predictor for the $n$th observation in the $c$th category, so $\vekey{\eta}$ is a matrix with $C$ rows and $N$ columns. Let $\vekey{V}^{(c)}$, $c=1, \ldots, C$, represents a matrix with dimension $N \times J_c$ that contains the covariate values for each individual and each category, so $\vekey{V}^{(c)}_{n \bullet}$ shows the covariate values for the $n$th observation and the $c$th category. Let $\vekey{\beta}$ be a matrix with $J_c$ rows and $C$ columns representing the regression coefficients in each dimension, then the **relationship between the parameters of the Dirichlet distribution and the covariates** is set up as:
+\begin{equation}\label{eq:dirichlet_regression}
+	g(\alpha_{cn}) = \eta_{cn} = \vekey{V}^{(c)}_{n\bullet} \vekey{\beta}^{c} \,\,,
+\end{equation}
+where $g(\cdot)$ is the link-function. As $\alpha_c>0$ for $c = 1,\ldots,C$, log-link  $g(\cdot) = \log(\cdot)$ is used. {\azul The regression coefficients $\vekey{\beta}^{(c)}$ are a column vector with $J_c$ elements}.
+
+
+The main idea of this document is to show how we are able to introduce random effects in the formula. To show how it works, we show an example where we include two different random effects. Both are shared by two components. 
+\begin{eqnarray}\label{eq:dirichlet_regression2}
+	g(\alpha_{1n}) & = & \eta_{1n} = \vekey{V}^{(c)}_{n\bullet} \vekey{\beta}^{1} + w^{1}_{n}\,\,, \nonumber \\
+	g(\alpha_{2n}) & = & \eta_{2n} = \vekey{V}^{(c)}_{n\bullet} \vekey{\beta}^{2} + w^{1}_{n}\,\,, \nonumber \\
+	g(\alpha_{3n}) & = & \eta_{3n} = \vekey{V}^{(c)}_{n\bullet} \vekey{\beta}^{3} + w^{2}_{n}\,\,, \nonumber \\
+	g(\alpha_{4n}) & = & \eta_{4n} = \vekey{V}^{(c)}_{n\bullet} \vekey{\beta}^{4} + w^{2}_{n}\,\,, \nonumber \\
+	\nonumber \\
+\vekey{w}^{1}  & \sim & \mathcal{N}(0, \tau_1) \,, \ \vekey{w}^{2} \sim \mathcal{N}(0, \tau_2) \nonumber \\
+\end{eqnarray}
+
+Previous equation can be rewritten in a vectorized form. In particular, if
+\[\vekey{\tilde{\eta}}=
+  \underbrace{\begin{bmatrix}
+    \vekey{\eta}_{\bullet 1} \\
+    \vdots \\
+    \vekey{\eta}_{\bullet N}
+  \end{bmatrix}}_{CN \times 1} \, \
+\]  denotes a restructured linear predictor, being $\vekey{\eta}_{\bullet n}$ a column vector representing the linear predictor for the $n$th observation and all the categories, the model in matrix notation is (without priors):
+\begin{equation}\label{eq:dirichlet_regression_matricial}
+	\vekey{\tilde{\eta}} = \vekey{A} \vekey{x}(\tau_1, \tau_2) \,,
+\end{equation}
+where $\vekey{A}$ is the matrix with covariates properly constructed with $CN$ rows and j (elements of the latent field) columns and $\vekey{x}(\tau_1, \tau_2)$ the elements of the latent Gaussian field. Some of them come from the iid effect and depends on the hyperpars $\tau_1$ and $\tau_2$. When we write $\vekey{\theta}$ we are refering to the vector $(\sigma_1, \sigma_2)$.
+
+## Objectives
+As INLA can not deal with multivariate likelihood, the challenge is measure the effect of the likelihood on the posterior and get $p( \vekey{x} \mid \vekey{y})$ and $p( \vekey{\theta} \mid \vekey{y})$. 
+
+## Aproximating INLA for Dirichlet regression
+All here depicted is based on the INLA method for non-linear predictors from the `inlabru` R-package (https://inlabru-org.github.io/inlabru/articles/method.html).
+
+The dirichlet likelihood is approximated by conditional independent gaussian, $\vekey{\tilde{z}_0}$ (see https://arxiv.org/pdf/1907.04059.pdf section 4). 
+$$\ve{\tilde{z}_0} \mid \ve{\tilde{\eta}}  \sim  \mathcal{N}(\ve{L_{0}}^T \ve{\tilde{\eta}}, \ve{I_{CN}})\,.$$
+Then:
+$$p(\vekey{y} \mid \vekey{x}, \vekey{\theta}) = p( \vekey{y} \mid \tilde{\eta}) \approx p(\vekey{z} \mid \tilde{\eta}) = p(\vekey{z} \mid \vekey{x}, \vekey{\theta}) \,.$$
+The model posterior is factorised as:
+$$p(\vekey{\theta}, \vekey{x} \mid \vekey{y}) = p(\vekey{\theta} \mid \vekey{y}) \cdot p(\vekey{x} \mid \vekey{y}, \vekey{\theta}) \,,$$
+and the approximation is factorised as:
+$$\overline{p}(\vekey{\theta}, \vekey{x} \mid \vekey{\tilde{z}_0}) = \overline{p}(\vekey{\theta} \mid \vekey{\tilde{z}_0}) \cdot \overline{p}(\vekey{x} \mid \vekey{\tilde{z}_0}, \vekey{\theta}) \,,$$
+
+# Computational implementation
+This section is devoted to explain how the algorithm works. The main function is `dirinlareg`. One of the key point is that the observation model is linked to $\vekey{x}$ only through the linear predictor. If you want just to how to apply the method, just go to the next section. 
+
+## Simulating data
+We use a simple example where we include four different categories with four different covariates and a common random effect, i.e.,
+\begin{eqnarray}
+  \log(\alpha_{1n}) & = & \eta_{1n} = \beta_{1}^1 \cdot v_{1n} + w^1(j_n) \,, \nonumber \\
+  \log(\alpha_{2n}) & = & \eta_{2n} = \beta_{1}^2 \cdot v_{2n} + w^1(j_n) \,, \nonumber \\
+  \log(\alpha_{3n}) & = & \eta_{3n} = \beta_{1}^3 \cdot v_{3n} + w^2(j_n) \,, \nonumber \\
+  \log(\alpha_{4n}) & = & \eta_{4n} = \beta_{1}^4 \cdot v_{4n} + w^2(j_n) \,, \nonumber \\
+\end{eqnarray}
+where $v_{kn}$ are covariates $k = 1, \ldots, 4$ simulated from a random uniform (-1, 1), and $w^1(j_n)$ and $w^2(j_n)$ are **iid shared random effects**. $j_n = 1, \ldots, J$, being $J$ the levels of the factor. In the example, we assume that $J = 25$. 
+
+```{r, results = "hide"}
+n <- 50
+levels_factor <- 25
+set.seed(100)
+  if(is.na(levels_factor)){
+    levels_factor <- n
+  }
+  cat_elem <- n/levels_factor
+  cat(paste0(n, "-", levels_factor, "\n"))
+  #Covariates
+  V <- as.data.frame(matrix(runif((10)*n, -1, 1), ncol=10))
+  #V <- as.data.frame(matrix(rnorm((10)*n, 0, 1), ncol=10))
+  names(V) <- paste0('v', 1:(10))
+
+  ### 4 random effects
+  iid1 <- iid2  <- rep(1:levels_factor, rep(n/levels_factor, levels_factor))
+  #Desorder index 3
+  # pos <- sample(1:length(iid3))
+  # iid3 <- iid3[pos]
+
+  V <- cbind(V, iid1, iid2)
+
+  # Formula that we want to fit
+  formula <- y ~ -1 + v1 + f(iid1, model = 'iid') |
+    -1 + v2 + f(iid1, model = 'iid') |
+    -1 + v3 + f(iid2, model = 'iid') |
+    -1 + v4 + f(iid2, model = 'iid')
+  names_cat <- formula_list(formula)
+
+  x <- c(-1.5, 2,
+         1, -3)
+
+  #random effect
+  prec_w <- c(4, 9)
+  (sd_w <- 1/sqrt(prec_w))
+
+  w1 <- rnorm(levels_factor, sd = sqrt(1/prec_w[1])) %>% rep(., rep(n/levels_factor, levels_factor))
+  w2 <- w1
+  w3 <- rnorm(levels_factor, sd = sqrt(1/prec_w[2])) %>% rep(., rep(n/levels_factor, levels_factor))
+  w4 <- w2
+
+
+  #w3 <- w3[pos]
+  x <- c(x, c(unique(w1),
+              unique(w3)))
+
+
+  d <- length(names_cat)
+  A_construct <- data_stack_dirich(y          = as.vector(rep(NA, n*d)),
+                                   covariates = names_cat,
+                                   share      = NULL,
+                                   data       = V,
+                                   d          = d,
+                                   n          = n )
+
+  # Ordering the data with covariates --- ###
+  eta <- A_construct %*% x
+  alpha <- exp(eta)
+  alpha <- matrix(alpha,
+                  ncol  = d,
+                  byrow = TRUE)
+  y_o <- rdirichlet(n, alpha)
+  colnames(y_o) <- paste0("y", 1:d)
+
+
+  y <- y_o
+```
+### Response
+```{r}
+head(as.data.frame(y))
+```
+
+### Covariates
+```{r}
+V[,c(1:4, 11)]
+```
+
+## Steps for the computation
+1. **Set the initial point for the latent field**
+    ```{r}
+    A <- A_construct
+    x0 <- rep(0, dim(A)[2])
+    x0
+    ```
+
+2. **Line search**. Note that, in order to do the line search, the A matrix has to be constructed. In the case of the example, is depicted below:
+    ```{r}
+  head(A)
+```
+Line search is run at **maximum of 10 iterations**, and imposing a condition in the gradient and in the difference of posteriors. The function that do it is `look_for_mode_x`.
+
+3. **Prepare formula and matrix A to call** `inla`.
+Now, the matrix A is just the identity matrix:
+    ```{r, results = "hide"}
+  d <- 4
+    data_stack_2 <- data_stack_dirich_formula(y          = NA,
+                                              covariates = names_cat,
+                                              share      = NULL,
+                                              data       = V,
+                                              d          = d,
+                                              n          = n )
+
+  A <- data_stack_2[[1]]
+```
+and the formula is constructed as:
+    ```{r}
+  data_stack_2$formula.inla
+```
+being each element incorporated as effect using different index:
+
+    ```{r}
+    data_stack_2[[1]]$effects$data %>% head(.)
+```
+
+4. Call `inla` to obtain $\overline{p}(\vekey{\theta} \mid \vekey{\tilde{z}_0})$ and  $\overline{p}(\vekey{x} \mid \vekey{\tilde{z}_0}) \,,$
+
+
+5. If in step 2, algorithm has converged, we have finished. If not, we define a new initial point with the mode of the posterior distributions given by `inla`.
+
+# Example
+
+## Data simulation
+We simulate a dataset with the following structure:
+\begin{eqnarray}
+  \log(\alpha_{1n}) & = & \eta_{1n} = \beta_{1}^1 \cdot v_{1n} + w^1(j_n) \,, \nonumber \\
+  \log(\alpha_{2n}) & = & \eta_{2n} = \beta_{1}^2 \cdot v_{2n} + w^1(j_n) \,, \nonumber \\
+  \log(\alpha_{3n}) & = & \eta_{3n} = \beta_{1}^3 \cdot v_{3n} + w^2(j_n) \,, \nonumber \\
+  \log(\alpha_{4n}) & = & \eta_{4n} = \beta_{1}^4 \cdot v_{4n} + w^2(j_n) \,, \nonumber \\
+\end{eqnarray}
+where $v_{kn}$ are covariates $k = 1, \ldots, 4$ simulated from a random uniform (-1, 1), and $w^1(j_n)$ and $w^2(j_n)$ are **iid shared random effects**. $j_n = 1, \ldots, J$, being $J$ the levels of the factor.
+
+We simulate a dataset with 4 categories, $N = 100$ and $J = 5$. We have fitted the models using Gaussian priors for $\beta$s, pc-priors for $\sigma_1$ and $\sigma_2$ with **standard deviations** sigma = 10 and alpha = 0.01.
+
+```{r}
+  set.seed(100)
+  levels_factor <- 5
+  n <- 100
+  cat_elem <- n/levels_factor
+  #Covariates
+  V <- as.data.frame(matrix(runif((10)*n, -1, 1), ncol=10))
+  names(V) <- paste0('v', 1:(10))
+  tau0 <- 1
+
+  ### 2 random effects
+  iid1 <- iid2  <- rep(1:levels_factor, rep(n/levels_factor, levels_factor))
+ 
+  V <- cbind(V, iid1, iid2)
+
+  # Formula that we want to fit
+  formula <- y ~ -1 + v1 + f(iid1, model = 'iid') |
+    -1 + v2 + f(iid1, model = 'iid') |
+    -1 + v3 + f(iid2, model = 'iid') |
+    -1 + v4 + f(iid2, model = 'iid')
+  names_cat <- formula_list(formula)
+
+  x <- c(-1.5, 2,
+         1, -3)
+
+  #random effect
+  prec_w <- c(4, 9)
+  sd_w <- 1/sqrt(prec_w)
+
+  w1 <- rnorm(levels_factor, sd = sqrt(1/prec_w[1])) %>% rep(., rep(n/levels_factor, levels_factor))
+  w2 <- w1
+  w3 <- rnorm(levels_factor, sd = sqrt(1/prec_w[2])) %>% rep(., rep(n/levels_factor, levels_factor))
+  w4 <- w3
+
+
+  #w3 <- w3[pos]
+  x <- c(x, c(unique(w1),
+              unique(w3)))
+
+
+  d <- length(names_cat)
+  A_construct <- data_stack_dirich(y          = as.vector(rep(NA, n*d)),
+                                   covariates = names_cat,
+                                   share      = NULL,
+                                   data       = V,
+                                   d          = d,
+                                   n          = n )
+
+  # Ordering the data with covariates --- ###
+  eta <- A_construct %*% x
+  alpha <- exp(eta)
+  alpha <- matrix(alpha,
+                  ncol  = d,
+                  byrow = TRUE)
+  y_o <- rdirichlet(n, alpha)
+  colnames(y_o) <- paste0("y", 1:d)
+
+
+  y <- y_o
+  y %>% round(.,4) %>% as.data.frame(.) %>% head(.)
+```
+
+
+## Fitting the model
+The next step is to call the **dirinlareg** function in order to fit a model to the data. We used the index iid1 and iid2 to indicate the corresponding index to the iid random effects. In addition, we just need to the response variable, the covariates, the precision for the Gaussian prior distribution of the parameters and the prior for the hyperparameters.
+
+```{r, echo= TRUE, results= 'hide', warning= FALSE, message= FALSE, eval = TRUE}
+ formula  = y ~
+      -1 + v1 + f(iid1, model = 'iid', hyper=list(theta=(list(prior="pc.prec", param=c(10, 0.01))))) |
+      -1 + v2 + f(iid1, model = 'iid', hyper=list(theta=(list(prior="pc.prec", param=c(10, 0.01))))) |
+      -1 + v3 + f(iid2, model = 'iid', hyper=list(theta=(list(prior="pc.prec", param=c(10, 0.01))))) |
+      -1 + v4 + f(iid2, model = 'iid', hyper=list(theta=(list(prior="pc.prec", param=c(10, 0.01)))))
+   
+ model.inla <- dirinlareg(formula = formula,
+                y        = y,
+                data.cov = V,
+                prec     = 0.01,
+                verbose  = FALSE)
+
+```
+
+To collect information about the fitted values and marginal posterior distributions of the parameters, we can use the methods **summary** and **plot** directly to the **dirinlaregmodel** object generated.
+
+### Summary
+```{r, echo = TRUE, warning= FALSE, message= FALSE}
+summary(model.inla)
+```
+
+### Plot of the posterior distributions
+```{r, echo = FALSE, eval = FALSE, warning= FALSE, message= FALSE}
+  plot(model.inla)
+```
+
+```{r, eval = TRUE, echo = FALSE, fig.asp=0.7, , warning= FALSE, message= FALSE, fig.height=5, fig.width = 10, out.width = '100%', fig.cap = 'Posterior distributions of the parameters. Vertical line represents the real value'}
+### --- 4. Plotting marginal posterior distributions of the parameters --- ####
+### ----- 4.1. Marginal posterior distributions of the slopes --- ####
+p2 <- list()
+beta1 <- expression(paste("p(", beta[1], "|", "y)"))
+
+for (i in 1:length(model.inla$marginals_fixed))
+{
+
+  dens <- as.data.frame(model.inla$marginals_fixed[[i]][[1]])
+
+  ### Intercept
+  
+  p2[[i]] <- ggplot(dens,
+                    aes(x = x,
+                        y = y
+                    )) +
+    geom_line(size = 0.6) +
+    xlim(quantile(dens$x, probs=c(0.05, 0.95))) +
+    theme_bw() + #Show axes
+    xlab(expression(beta[1])) + #xlab
+    ylab(beta1) #ylab
+
+
+  #Real value
+  p2[[i]] <- p2[[i]] + geom_vline(xintercept = x[seq(1,4, by=1)][i], col = "red")
+
+  title1 <- paste0("y",i)
+  p2[[i]] <- p2[[i]] +
+    ggtitle(title1) +
+    theme(
+      plot.title = element_text(color = "black",
+                                size  = 15,
+                                face  = "bold.italic",
+                                hjust = 0.5))
+}
+
+
+gridExtra::grid.arrange(p2[[1]], p2[[2]], p2[[3]], p2[[4]], ncol = 2)
+```
+
+
+
+
+```{r, eval = TRUE, echo = FALSE, fig.asp=0.7, , warning= FALSE, message= FALSE, fig.width = 10, out.width = '100%', fig.cap = 'Posterior distributions of the hyperparameters. Vertical line represents the real value'}
+p3 <- list()
+
+for (i in 1:dim(model.inla$summary_hyperpar)[1])
+{
+  tau1 <- expression(paste("p(", tau, i,"|", "y)"))
+
+  dens <- as.data.frame(model.inla$marginals_hyperpar[[i]])
+  
+  ### Intercept
+  
+  p3[[i]] <- ggplot(dens,
+                    aes(x = x,
+                        y = y
+                    )) +
+    geom_line(size = 0.6) +
+    xlim(quantile(dens$x, probs=c(0.05, 0.9))) +
+    theme_bw() + #Show axes
+    xlab(expression(tau[i])) + #xlab
+    ylab(tau1) #ylab
+
+
+  #Real value
+  p3[[i]] <- p3[[i]] + geom_vline(xintercept = prec_w[i], col = "red")
+
+
+  p3[[i]] <- p3[[i]] +
+    ggtitle(" ") +
+    theme(
+      plot.title = element_text(color = "black",
+                                size  = 15,
+                                face  = "bold.italic",
+                                hjust = 0.5))
+}
+
+
+gridExtra::grid.arrange(p3[[1]], p3[[2]])
+```
+
+
+
+## Predictions
+
+The package provides a method predict to compute posterior predictive distributions for new individuals. To show how this function works, we will predict for a value of v1 = 0.2, v2 = 0.5, and v3 = -0.1:
+```{r, echo= TRUE, warning= FALSE, message= FALSE, eval = TRUE}
+### --- 5. Predicting for v1 = 0.25, v2 = 0.5, v3 = 0.5, v4 = 0.1 --- ####
+model.prediction <-
+  predict(model.inla,
+                  data.pred.cov = data.frame(v1 = 0.2 ,
+                                         v2 = 0.5,
+                                         v3 = -0.1,
+                                         v4 = 0.1))
+model.prediction$summary_predictive_means
+
+### --- 6. We can also predict directly --- ####
+model.inla <- dirinlareg(
+  formula  = formula,
+  y        = y,
+  data.cov = V,
+  prec     = 0.0001,
+  verbose  = FALSE,
+  prediction = TRUE,
+  data.pred.cov = data.frame(v1 = 0.2 ,
+                             v2 = 0.5,
+                             v3 = -0.1,
+                             v4 = 0.1))
+
+
+model.prediction$summary_predictive_means
+
+```
+
